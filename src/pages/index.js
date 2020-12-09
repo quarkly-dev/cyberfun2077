@@ -70,7 +70,7 @@ export default (() => {
 						position="relative"
 						top=".15em"
 					>
-						last news
+						LATEST NEWS{"\n\n"}
 					</Text>
 					<Box
 						flex="1 1 auto"
