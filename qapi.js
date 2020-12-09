@@ -23,7 +23,9 @@ export default {
 				"favicon_win10_270px": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2.png?v=2020-12-07T08:46:45.726Z",
 				"title": "404",
 				"description": "Error page",
-				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z"
+				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z",
+				"og:title": "404",
+				"og:description": "Error page"
 			}
 		},
 		"5fbbb8e92c4ef2001e329c5b": {
@@ -53,7 +55,9 @@ export default {
 				"favicon_win10_270px": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2.png?v=2020-12-07T08:46:45.726Z",
 				"title": "News",
 				"description": "Cyberpunk world top news",
-				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z"
+				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z",
+				"og:title": "News",
+				"og:description": "Cyberpunk world top news"
 			}
 		},
 		"5fbbc05c79530b001fd2b8f0": {
@@ -72,7 +76,9 @@ export default {
 				"favicon_win10_270px": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2.png?v=2020-12-07T08:46:45.726Z",
 				"title": "Gallery",
 				"description": "Сategorized images",
-				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z"
+				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z",
+				"og:title": "Gallery",
+				"og:description": "Сategorized images"
 			}
 		},
 		"5fc600c5cae167001e070afa": {
@@ -85,7 +91,9 @@ export default {
 				"favicon_win10_270px": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2.png?v=2020-12-07T08:46:45.726Z",
 				"title": "Final Preview",
 				"description": "Full overview and game review",
-				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z"
+				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z",
+				"og:title": "Final Preview",
+				"og:description": "Full overview and game review"
 			}
 		},
 		"5fc631b3cae167001e070c70": {
@@ -98,7 +106,9 @@ export default {
 				"favicon_win10_270px": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2.png?v=2020-12-07T08:46:45.726Z",
 				"title": "Weapons and life",
 				"description": "About weapons and the way of life in the game",
-				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z"
+				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z",
+				"og:title": "Weapons and life",
+				"og:description": "About weapons and the way of life in the game"
 			}
 		},
 		"5fc6352e79530b001fd2ea6b": {
@@ -111,7 +121,9 @@ export default {
 				"favicon_win10_270px": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2.png?v=2020-12-07T08:46:45.726Z",
 				"title": "Pre-order Steam",
 				"description": "Pre-order Steam bonuses",
-				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z"
+				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z",
+				"og:title": "Pre-order Steam",
+				"og:description": "Pre-order Steam bonuses"
 			}
 		},
 		"5fc64bcc2c4ef2001e32d117": {
@@ -124,7 +136,9 @@ export default {
 				"favicon_win10_270px": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2.png?v=2020-12-07T08:46:45.726Z",
 				"title": "Main story",
 				"description": "Main plot and its duration",
-				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z"
+				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z",
+				"og:title": "Main story",
+				"og:description": "Main plot and its duration"
 			}
 		},
 		"5fc769a079530b001fd2ed42": {
@@ -137,7 +151,9 @@ export default {
 				"favicon_win10_270px": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2.png?v=2020-12-07T08:46:45.726Z",
 				"title": "Сoncept arts",
 				"description": "game concept art",
-				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z"
+				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z",
+				"og:title": "Сoncept arts",
+				"og:description": "game concept art"
 			}
 		},
 		"5fc7847fdc290b001ef275bb": {
@@ -150,7 +166,9 @@ export default {
 				"favicon_win10_270px": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2.png?v=2020-12-07T08:46:45.726Z",
 				"title": "Screenshots",
 				"description": "Game screenshots",
-				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z"
+				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z",
+				"og:title": "Screenshots",
+				"og:description": "Game screenshots"
 			}
 		},
 		"5fc78483dc290b001ef275bd": {
@@ -163,7 +181,9 @@ export default {
 				"favicon_win10_270px": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2.png?v=2020-12-07T08:46:45.726Z",
 				"title": "Wallpapers",
 				"description": "Game wallpapers",
-				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z"
+				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z",
+				"og:title": "Wallpapers",
+				"og:description": "Game wallpapers"
 			}
 		},
 		"5fc78488cae167001e0710f4": {
@@ -176,7 +196,9 @@ export default {
 				"favicon_win10_270px": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2.png?v=2020-12-07T08:46:45.726Z",
 				"title": "Steelbook arts",
 				"description": "game arts",
-				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z"
+				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z",
+				"og:title": "Steelbook arts",
+				"og:description": "game arts"
 			}
 		},
 		"5fc78e4cb1c8af001eb5a7b9": {
@@ -189,7 +211,9 @@ export default {
 				"favicon_win10_270px": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2.png?v=2020-12-07T08:46:45.726Z",
 				"title": "System requirments",
 				"description": "System requirements for computers",
-				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z"
+				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z",
+				"og:title": "System requirments",
+				"og:description": "System requirements for computers"
 			}
 		},
 		"5fc8871204e716001efc3405": {
@@ -202,7 +226,9 @@ export default {
 				"favicon_win10_270px": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2.png?v=2020-12-07T08:46:45.726Z",
 				"title": "Transport",
 				"description": "Transport information available in the game ",
-				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z"
+				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z",
+				"og:title": "Transport",
+				"og:description": "Transport information available in the game "
 			}
 		},
 		"5fc88a81f8ae59001fb0b696": {
@@ -215,7 +241,9 @@ export default {
 				"favicon_win10_270px": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2.png?v=2020-12-07T08:46:45.726Z",
 				"title": "Gans of NightCity",
 				"description": "Gangs guide",
-				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z"
+				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z",
+				"og:title": "Gans of NightCity",
+				"og:description": "Gangs guide"
 			}
 		},
 		"5fc89a29e563f3001ecb59fd": {
@@ -228,7 +256,9 @@ export default {
 				"favicon_win10_270px": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2.png?v=2020-12-07T08:46:45.726Z",
 				"title": "Guide for beginers",
 				"description": "Information for a successful start for beginners",
-				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z"
+				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z",
+				"og:title": "Guide for beginers",
+				"og:description": "Information for a successful start for beginners"
 			}
 		},
 		"5fca16d100ea36001e3b5f45": {
@@ -241,7 +271,9 @@ export default {
 				"favicon_win10_270px": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2.png?v=2020-12-07T08:46:45.726Z",
 				"title": "Weapons",
 				"description": "Game information about weapons available in the game ",
-				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z"
+				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z",
+				"og:title": "Weapons",
+				"og:description": "Game information about weapons available in the game "
 			}
 		},
 		"5fca31e4433d20001e7d914e": {
@@ -260,7 +292,9 @@ export default {
 				"favicon_win10_270px": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2.png?v=2020-12-07T08:46:45.726Z",
 				"title": "Cyberwiki",
 				"description": "Articles subdivided into categories",
-				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z"
+				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z",
+				"og:title": "Cyberwiki",
+				"og:description": "Articles subdivided into categories"
 			}
 		},
 		"5fca4b7ce563f3001ecb66ce": {
@@ -273,7 +307,9 @@ export default {
 				"favicon_win10_270px": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2.png?v=2020-12-07T08:46:45.726Z",
 				"title": "Multiplayer",
 				"description": "Multiplayer mode description",
-				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z"
+				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z",
+				"og:title": "Multiplayer",
+				"og:description": "Multiplayer mode description"
 			}
 		},
 		"5fce2cb2d84ef0001e9482b0": {
@@ -283,7 +319,12 @@ export default {
 			"seo": {
 				"title": "Feedback",
 				"description": "Feedback form",
-				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z"
+				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z",
+				"og:title": "Feedback",
+				"og:description": "Feedback form",
+				"favicon_32px": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/1.png?v=2020-12-09T09:56:06.625Z",
+				"favicon_apple_152px": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2.png?v=2020-12-09T09:56:14.634Z",
+				"favicon_win10_270px": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/3.png?v=2020-12-09T09:56:27.017Z"
 			}
 		}
 	},

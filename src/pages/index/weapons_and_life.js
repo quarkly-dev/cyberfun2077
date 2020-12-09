@@ -12,6 +12,8 @@ export default (() => {
 				Weapons and life
 			</title>
 			<meta name={"description"} content={"About weapons and the way of life in the game"} />
+			<meta property={"og:title"} content={"Weapons and life"} />
+			<meta property={"og:description"} content={"About weapons and the way of life in the game"} />
 			<meta property={"og:image"} content={"https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/1.png?v=2020-12-07T08:46:45.707Z"} type={"image/x-icon"} />
 			<link rel={"apple-touch-icon"} href={"https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/3%20(1).png?v=2020-12-07T08:46:45.723Z"} />
