@@ -1,0 +1,16 @@
+@font-face {
+  font-family: BlenderPro;
+  src: url("/fonts/BlenderPro/BlenderPro-Book.woff2") format("woff2"),
+    url("/fonts/BlenderPro/BlenderPro-Book.woff") format("woff"),
+    url("/fonts/BlenderPro/BlenderPro-Book.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: BlenderPro;
+  src: url("/fonts/BlenderPro/BlenderPro-Medium.woff2") format("woff2"),
+    url("/fonts/BlenderPro/BlenderPro-Medium.woff") format("woff"),
+    url("/fonts/BlenderPro/BlenderPro-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
