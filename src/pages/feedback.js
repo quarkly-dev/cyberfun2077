@@ -119,7 +119,7 @@ export default (() => {
 						<Formspree
 							errorMessage="Something went wrong :("
 							completeText="Thank уou! Your message has been sent."
-							endpoint="https://formspree.io/f/mwkwrppo"
+							endpoint="https://formspree.io/f/myybnyar"
 							display="flex"
 							flex-direction="column"
 							font="--paragraph"
