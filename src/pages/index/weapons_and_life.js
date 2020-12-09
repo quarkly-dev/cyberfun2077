@@ -12,6 +12,7 @@ export default (() => {
 				Weapons and life
 			</title>
 			<meta name={"description"} content={"About weapons and the way of life in the game"} />
+			<meta property={"og:image"} content={"https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/1.png?v=2020-12-07T08:46:45.707Z"} type={"image/x-icon"} />
 			<link rel={"apple-touch-icon"} href={"https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/3%20(1).png?v=2020-12-07T08:46:45.723Z"} />
 			<link rel={"apple-touch-icon"} sizes={"76x76"} href={"https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/3%20(1).png?v=2020-12-07T08:46:45.723Z"} />
@@ -196,7 +197,7 @@ export default (() => {
 							width="100%"
 							font="--paragraph"
 							margin="0 0 1.5em 0"
-							src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/weap.webp?v=2020-12-01T12:15:28.692Z"
+							src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2020-08-10-image-11-j.png?v=2020-12-09T09:13:50.553Z"
 							object-fit="contain"
 							display="flex"
 						/>
@@ -223,7 +224,7 @@ export default (() => {
 							width="100%"
 							font="--paragraph"
 							margin="0 0 1.5em 0"
-							src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/weapon2.webp?v=2020-12-01T12:18:53.947Z"
+							src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2020-08-10-image-19-j.png?v=2020-12-09T09:14:26.906Z"
 							object-fit="contain"
 							display="flex"
 						/>

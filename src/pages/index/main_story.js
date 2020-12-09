@@ -12,6 +12,7 @@ export default (() => {
 				Main story
 			</title>
 			<meta name={"description"} content={"Main plot and its duration"} />
+			<meta property={"og:image"} content={"https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/1.png?v=2020-12-07T08:46:45.707Z"} type={"image/x-icon"} />
 			<link rel={"apple-touch-icon"} href={"https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/3%20(1).png?v=2020-12-07T08:46:45.723Z"} />
 			<link rel={"apple-touch-icon"} sizes={"76x76"} href={"https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/3%20(1).png?v=2020-12-07T08:46:45.723Z"} />
@@ -126,7 +127,7 @@ export default (() => {
 								Source
 							</Link>
 						</Box>
-						<Image width="100%" font="--paragraph" margin="0 0 1.5em 0" src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/story1.webp?v=2020-12-01T14:00:08.705Z" />
+						<Image width="100%" font="--paragraph" margin="0 0 1.5em 0" src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2020-09-21-image-13-j%20(1).png?v=2020-12-09T09:05:54.738Z" />
 						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
 							<Strong color="--secondary">
 								Highly anticipated:
@@ -149,7 +150,7 @@ export default (() => {
 							<br />
 							Today, we received some additional information about the title's expected playtime. According to CD Projekt Red, Cyberpunk 2077 will be "slightly shorter" than the studio's last big game, The Witcher 3 -- at least as far as the main story is concerned.
 						</Text>
-						<Image width="100%" font="--paragraph" margin="0 0 1.5em 0" src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/story2.webp?v=2020-12-01T14:00:08.718Z" />
+						<Image width="100%" font="--paragraph" margin="0 0 1.5em 0" src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2020-09-21-image-10-j.png?v=2020-12-09T09:09:32.394Z" />
 						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
 							According to quest designer Patrick Mills, a substantial number of players never managed to finish The Witcher 3's core path. Based on information from HowLongToBeat, it seems the average player takes around 51 hours to finish that segment of the game, without participating in any other side content.
 							<br />
@@ -163,7 +164,7 @@ export default (() => {
 							<br />
 							However, content fiends and completionists can rest easy. Cyberpunk 2077 is CD Projekt Red's most reactive game yet, so there will be plenty of replay value if you decide to run through it a second, third, or fourth time.
 						</Text>
-						<Image width="100%" font="--paragraph" margin="0 0 1.5em 0" src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/story3.webp?v=2020-12-01T14:02:46.551Z" />
+						<Image width="100%" font="--paragraph" margin="0 0 1.5em 0" src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2020-09-21-image-11-j.png?v=2020-12-09T09:09:45.145Z" />
 						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0" sm-margin="0 0 1.5em 0">
 							Furthermore, even if you only plan for one playthrough, Mills' comments don't relate to Cyberpunk 2077's plentiful side content in any way -- that'll still be just as expansive as ever.
 							<br />

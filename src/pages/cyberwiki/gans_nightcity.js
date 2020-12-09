@@ -12,6 +12,7 @@ export default (() => {
 				Gans of NightCity
 			</title>
 			<meta name={"description"} content={"Gangs guide"} />
+			<meta property={"og:image"} content={"https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/1.png?v=2020-12-07T08:46:45.707Z"} type={"image/x-icon"} />
 			<link rel={"apple-touch-icon"} href={"https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/3%20(1).png?v=2020-12-07T08:46:45.723Z"} />
 			<link rel={"apple-touch-icon"} sizes={"76x76"} href={"https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/3%20(1).png?v=2020-12-07T08:46:45.723Z"} />
@@ -109,7 +110,7 @@ export default (() => {
 							width="100%"
 							font="--paragraph"
 							margin="0 0 1.5em 0"
-							src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/cyberpunk20772.webp?v=2020-12-03T06:57:00.224Z"
+							src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/cyberpunk20772.png?v=2020-12-09T09:23:33.330Z"
 							object-fit="contain"
 							display="flex"
 						/>
