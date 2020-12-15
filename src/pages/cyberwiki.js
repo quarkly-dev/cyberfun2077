@@ -98,16 +98,16 @@ export default (() => {
 					<Components.Grid>
 						<Components.Card>
 							<Override slot="Name Text">
-								Guide for beginers
+								Guide for beginners
 							</Override>
-							<Override slot="Content" href="/cyberwiki/guide_beginers" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/citiy.png?v=2020-12-04T21:11:43.037Z) 0% 0% /cover no-repeat scroll padding-box" />
+							<Override slot="Content" href="/cyberwiki/guide_beginners" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/citiy.png?v=2020-12-04T21:11:43.037Z) 0% 0% /cover no-repeat scroll padding-box" />
 							<Override slot="Date" display="none" />
 						</Components.Card>
 						<Components.Card>
 							<Override slot="Name Text">
-								Gans of nighcity
+								Gangs of Night city
 							</Override>
-							<Override slot="Content" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/team.png?v=2020-12-04T21:11:43.025Z) 0% 0% /cover no-repeat scroll padding-box" href="/cyberwiki/gans_nightcity" />
+							<Override slot="Content" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/team.png?v=2020-12-04T21:11:43.025Z) 0% 0% /cover no-repeat scroll padding-box" href="/cyberwiki/gans_of_night_city" />
 							<Override slot="Date" display="none" />
 						</Components.Card>
 						<Components.Card>
