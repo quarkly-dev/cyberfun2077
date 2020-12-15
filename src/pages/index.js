@@ -32,7 +32,13 @@ export default (() => {
 			background="--dark"
 		>
 			<Components.Side>
-				<Override slot="link" color="--primary" pointer-events="none" cursor="default" />
+				<Override
+					slot="link"
+					color="--primary"
+					pointer-events="none"
+					cursor="default"
+					font="600 4em/.99 BlenderPro, sans-serif"
+				/>
 				<Override slot="link6">
 					Feedback
 				</Override>
@@ -70,7 +76,7 @@ export default (() => {
 						position="relative"
 						top=".15em"
 					>
-						last news
+						LATEST NEWS{"\n\n"}
 					</Text>
 					<Box
 						flex="1 1 auto"
@@ -86,10 +92,10 @@ export default (() => {
 				<Box quarkly-title="Content" margin="0em 2.5em 0em 0em" sm-margin="0em .58em 0em 0em" md-margin="0em 1.67vw 0em 0em">
 					<Components.Grid>
 						<Components.Card grid-column="auto / span 2" md-grid-column="auto / auto">
-							<Override slot="Date Text">
+							<Override slot="Date Text" font="500 16px/18px BlenderPro, sans-serif">
 								19.11.2020
 							</Override>
-							<Override slot="Name Text">
+							<Override slot="Name Text" font="600 27.84px/27.84px BlenderPro, sans-serif">
 								Final Preview
 							</Override>
 							<Override

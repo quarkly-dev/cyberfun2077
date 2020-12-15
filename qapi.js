@@ -233,31 +233,31 @@ export default {
 		},
 		"5fc88a81f8ae59001fb0b696": {
 			"id": "5fc88a81f8ae59001fb0b696",
-			"pageUrl": "gans_nightcity",
-			"name": "Gans of nightCity",
+			"pageUrl": "gans_of_night_city",
+			"name": "Gangs of Night city",
 			"seo": {
 				"favicon_32px": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/1.png?v=2020-12-07T08:46:45.707Z",
 				"favicon_apple_152px": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/3%20(1).png?v=2020-12-07T08:46:45.723Z",
 				"favicon_win10_270px": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2.png?v=2020-12-07T08:46:45.726Z",
-				"title": "Gans of NightCity",
+				"title": "Gangs of Night city",
 				"description": "Gangs guide",
 				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z",
-				"og:title": "Gans of NightCity",
+				"og:title": "Gangs of Night city",
 				"og:description": "Gangs guide"
 			}
 		},
 		"5fc89a29e563f3001ecb59fd": {
 			"id": "5fc89a29e563f3001ecb59fd",
-			"pageUrl": "guide_beginers",
-			"name": "Guide for beginers",
+			"pageUrl": "guide_beginners",
+			"name": "Guide for beginners",
 			"seo": {
 				"favicon_32px": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/1.png?v=2020-12-07T08:46:45.707Z",
 				"favicon_apple_152px": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/3%20(1).png?v=2020-12-07T08:46:45.723Z",
 				"favicon_win10_270px": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2.png?v=2020-12-07T08:46:45.726Z",
-				"title": "Guide for beginers",
+				"title": "Guide for beginners",
 				"description": "Information for a successful start for beginners",
 				"og:image": "https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/og-image%20(1).png?v=2020-12-09T09:42:56.805Z",
-				"og:title": "Guide for beginers",
+				"og:title": "Guide for beginners",
 				"og:description": "Information for a successful start for beginners"
 			}
 		},
