@@ -1,12 +1,14 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Icon, Text, Box, Image, Strong, Span, List } from "@quarkly/widgets";
+import { Theme, Icon, Text, Link, Box, Image, Strong, Span, List } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
+import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override } from "@quarkly/components";
 import * as Components from "components";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 export default (() => {
 	return <Theme theme={theme}>
+		<GlobalQuarklyPageStyles pageUrl={"cyberwiki/weapons"} />
 		<Helmet>
 			<title>
 				Weapons
@@ -24,23 +26,23 @@ export default (() => {
 		</Helmet>
 		<Components.Fonts />
 		<Box
-			quarkly-title="Page"
-			display="flex"
-			font="1vw/1 BlenderPro, sans-serif"
 			sm-flex-direction="column"
 			sm-max-height="100vh"
 			background="--dark"
+			quarkly-title="Page"
+			display="flex"
+			font="1vw/1 BlenderPro, sans-serif"
 		>
 			<Components.Side>
 				<Override slot="link1" color="--primary" pointer-events="none" cursor="default" />
 			</Components.Side>
 			<Components.Main>
 				<Box
-					quarkly-title="Header"
 					display="flex"
 					align-items="center"
 					margin="0em 0em 1.67em 0em"
 					height="2.5em"
+					quarkly-title="Header"
 				>
 					<Link href="/cyberwiki" display="flex" align-items="center" text-decoration-line="initial">
 						<Icon
@@ -55,37 +57,37 @@ export default (() => {
 						<Text
 							quarkly-title="Title"
 							font="--title"
+							position="relative"
+							top=".15em"
+							flex="0 0 auto"
 							color="--secondary"
 							text-transform="uppercase"
 							letter-spacing="-4%"
 							margin="0em 1em 0em 0em"
-							flex="0 0 auto"
-							position="relative"
-							top=".15em"
 						>
 							back
 						</Text>
 					</Link>
 					<Box
-						flex="1 1 auto"
-						height="50px"
-						overflow-x="hidden"
 						overflow-y="hidden"
 						background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) center right no-repeat scroll padding-box"
 						position="relative"
 						quarkly-title="Line"
 						sm-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) 90% center no-repeat scroll padding-box"
+						flex="1 1 auto"
+						height="50px"
+						overflow-x="hidden"
 					/>
 				</Box>
 				<Box
+					justify-content="center"
+					md-margin="2.5em 2.5em 3.75em 0em"
 					quarkly-title="Content"
 					margin="2.5em 2.5em 5em 0em"
 					sm-margin="0em .58em 2.5em 0em"
 					display="flex"
-					justify-content="center"
-					md-margin="2.5em 2.5em 3.75em 0em"
 				>
-					<Box quarkly-title="Article" max-width="52em" position="relative">
+					<Box max-width="52em" position="relative" quarkly-title="Article">
 						<Text font="--header1" color="--secondary" margin="0 0 .5em 0" sm-font="400 2.8em/1 BlenderPro, sans-serif">
 							Cyberpunk 2077 weapons shown so far
 						</Text>
@@ -98,38 +100,38 @@ Henry Stenhouse
 								Posted: 19 Nov 2020 8:30 pm
 							</Text>
 							<Link
-								href="https://ag.hyperxgaming.com/article/10702/all-cyberpunk-2077-weapons-shown-so-far"
 								font="--paragraph"
 								color="--secondary"
 								margin="0 0 0 0"
 								text-decoration-line="initial"
 								hover-text-decoration-line="underline"
+								href="https://ag.hyperxgaming.com/article/10702/all-cyberpunk-2077-weapons-shown-so-far"
 							>
 								Source
 							</Link>
 						</Box>
 						<Image
-							width="100%"
 							font="--paragraph"
 							margin="0 0 1.5em 0"
 							src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/1.jpg?v=2020-12-04T11:02:56.357Z"
 							object-fit="contain"
 							display="flex"
+							width="100%"
 						/>
-						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
+						<Text margin="0 0 2.5em 0" font="--paragraph" color="--textGray">
 							We’ve split our weapons into the core categories listed by CD Projekt Red, but it’s worth mentioning a few extra details first. Because Cyberpunk is an RPG, you’ll grow more skilled with guns over time, improving reload speed, stability and more. There are also different rarities of gun types, ranging all the way up to Legendary weapons which come with unique attributes. Exploration will be key to finding the best gear.{" "}
 							<br />
 							<br />
 							In our list of all weapons in Cyberpunk 2077, we’ve included any details we know about each weapon, and also included a few unnamed weapons that were given a very brief showcase during the Nighty City episode. Bear in mind that some weapons may change before the launch of the game. We'd also like to credit VG247's excellent interview (
 							<Link
+								text-overflow="clip"
+								hyphens="manual"
+								color="--secondary"
 								href="https://www.vg247.com/2020/08/10/cyberpunk-2077-legendary-weapons-guns/"
 								overflow-wrap="normal"
 								word-break="normal"
 								white-space="normal"
 								text-indent="0"
-								text-overflow="clip"
-								hyphens="manual"
-								color="--secondary"
 							>
 								read it here
 							</Link>
@@ -139,12 +141,12 @@ Henry Stenhouse
 							Tech weapons
 						</Text>
 						<Image
+							object-fit="contain"
+							display="flex"
 							width="100%"
 							font="--paragraph"
 							margin="0 0 1.5em 0"
 							src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2.jpg?v=2020-12-04T11:04:47.802Z"
-							object-fit="contain"
-							display="flex"
 						/>
 						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
 							For the tinkerers of the future world, Tech weapons are where it’s at. These unconventional guns use electromagnetic equipment to hurl chunky projectiles extremely quickly. This means they’re perfect for firing through cover or, y’know, another person. Whichever makes for the quickest path to your target.
@@ -176,18 +178,18 @@ Henry Stenhouse
 						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
 							An electric, double-barrelled shotgun. Fires slowly and ejects after each shot, but packs a serious punch.
 						</Text>
-						<Text font="--paragraph" color="--secondary" margin="0 0 1.5em 0">
+						<Text margin="0 0 1.5em 0" font="--paragraph" color="--secondary">
 							<Strong>
 								Tsunami Nekomata
 							</Strong>
 						</Text>
 						<Image
-							width="100%"
-							font="--paragraph"
 							margin="0 0 1.5em 0"
 							src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/4.jpg?v=2020-12-04T11:14:29.331Z"
 							object-fit="contain"
 							display="flex"
+							width="100%"
+							font="--paragraph"
 						/>
 						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
 							A semi-auto sniper rifle which can be charged up to fire a penetrating blast.
@@ -198,14 +200,14 @@ Henry Stenhouse
 							</Strong>
 						</Text>
 						<Image
-							width="100%"
 							font="--paragraph"
 							margin="0 0 1.5em 0"
 							src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/5.jpg?v=2020-12-04T11:15:37.749Z"
 							object-fit="contain"
 							display="flex"
+							width="100%"
 						/>
-						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
+						<Text color="--textGray" margin="0 0 2.5em 0" font="--paragraph">
 							This weapon appears to fire a compact, shotgun-style blast, but with a faster rate of fire than the Satara.
 						</Text>
 						<Text font="--paragraph" color="--secondary" margin="0 0 1.5em 0">
@@ -214,12 +216,12 @@ Henry Stenhouse
 							</Strong>
 						</Text>
 						<Image
-							width="100%"
-							font="--paragraph"
-							margin="0 0 1.5em 0"
 							src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/6.jpg?v=2020-12-04T11:17:29.130Z"
 							object-fit="contain"
 							display="flex"
+							width="100%"
+							font="--paragraph"
+							margin="0 0 1.5em 0"
 						/>
 						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
 							We’re not sure if this image is actually the RT-46, but it looks pretty close to a powerful, charge-shot pistol.
@@ -237,18 +239,18 @@ Henry Stenhouse
 							object-fit="contain"
 							display="flex"
 						/>
-						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
+						<Text margin="0 0 2.5em 0" font="--paragraph" color="--textGray">
 							Power weapons will be the closest to your standard video game weapons, forgoing fancy tricks in favor of the classic tactic of putting lots of bullets into your enemies. Expect your usual mix of rifles and shotguns, but with the added bonus of ricochet bullets that can be bounced off walls to hit hiding enemies. You’ll see a line tracing the ricochet path when you aim, letting you pick off cowardly foes.
 						</Text>
-						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
+						<Text margin="0 0 2.5em 0" font="--paragraph" color="--textGray">
 							<Strong
-								overflow-wrap="normal"
-								word-break="normal"
-								white-space="normal"
 								text-indent="0"
 								text-overflow="clip"
 								hyphens="manual"
 								color="--secondary"
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
 							>
 								Tsunami Nue
 							</Strong>
@@ -258,13 +260,13 @@ Henry Stenhouse
 						</Text>
 						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
 							<Strong
-								overflow-wrap="normal"
 								word-break="normal"
 								white-space="normal"
 								text-indent="0"
 								text-overflow="clip"
 								hyphens="manual"
 								color="--secondary"
+								overflow-wrap="normal"
 							>
 								SDR-22
 							</Strong>
@@ -294,30 +296,30 @@ Henry Stenhouse
 							</Strong>
 						</Text>
 						<Image
+							display="flex"
 							width="100%"
 							font="--paragraph"
 							margin="0 0 1.5em 0"
 							src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/9.jpg?v=2020-12-04T11:22:18.290Z"
 							object-fit="contain"
-							display="flex"
 						/>
 						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
 							We also get a look at a sawn-off style double-barrel shotgun in the Nighty City footage.
 						</Text>
-						<Text font="--paragraph" color="--secondary" margin="0 0 1.5em 0">
+						<Text color="--secondary" margin="0 0 1.5em 0" font="--paragraph">
 							<Strong>
 								HJSH-18 Masamune
 							</Strong>
 						</Text>
 						<Image
-							width="100%"
-							font="--paragraph"
-							margin="0 0 1.5em 0"
 							src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/10.jpg?v=2020-12-04T11:22:51.071Z"
 							object-fit="contain"
 							display="flex"
+							width="100%"
+							font="--paragraph"
+							margin="0 0 1.5em 0"
 						/>
-						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
+						<Text margin="0 0 2.5em 0" font="--paragraph" color="--textGray">
 							Named after the famous Japanese swordsmith. We get a short glimpse of the reload animation for this rifle which comes with a handy scope on top.
 						</Text>
 						<Text font="--paragraph" color="--secondary" margin="0 0 1.5em 0">
@@ -326,12 +328,12 @@ Henry Stenhouse
 							</Strong>
 						</Text>
 						<Image
-							width="100%"
-							font="--paragraph"
 							margin="0 0 1.5em 0"
 							src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/11.jpg?v=2020-12-04T11:23:55.012Z"
 							object-fit="contain"
 							display="flex"
+							width="100%"
+							font="--paragraph"
 						/>
 						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
 							There’s a brief flash of another gun shown in the breakdown, which we believe to be the DT-9 LMG. it has a heavy, slow rate of fire, and comes with a tripod on the front that you can presumably place in order to increase stability.
@@ -377,18 +379,18 @@ Henry Stenhouse
 						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
 							This looks like a one-handed, homing shotgun. Fires a bunch of pellets which float in the air before zooming towards a target.
 						</Text>
-						<Text font="--paragraph" color="--secondary" margin="0 0 1.5em 0">
+						<Text margin="0 0 1.5em 0" font="--paragraph" color="--secondary">
 							<Strong>
 								TKI-20 Shingen
 							</Strong>
 						</Text>
 						<Image
+							object-fit="contain"
+							display="flex"
 							width="100%"
 							font="--paragraph"
 							margin="0 0 1.5em 0"
 							src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/14.jpg?v=2020-12-04T11:28:49.164Z"
-							object-fit="contain"
-							display="flex"
 						/>
 						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
 							A compact, burst-fire pistol with homing bullets. As with most Smart weapons, once locked, the weapon can be fired away from the target to get bullets to curve around walls and barriers.
@@ -409,31 +411,31 @@ Henry Stenhouse
 						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
 							A small SMG-style weapon with a multiple fire modes, a flash suppressor and a quickly reloadable magazine.
 						</Text>
-						<Text font="--paragraph" color="--secondary" margin="0 0 1.5em 0">
+						<Text margin="0 0 1.5em 0" font="--paragraph" color="--secondary">
 							<Strong>
 								L-69 Zhuo
 							</Strong>
 						</Text>
 						<Image
-							width="100%"
-							font="--paragraph"
-							margin="0 0 1.5em 0"
 							src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/16.jpg?v=2020-12-04T11:30:33.152Z"
 							object-fit="contain"
 							display="flex"
+							width="100%"
+							font="--paragraph"
+							margin="0 0 1.5em 0"
 						/>
 						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
 							Another smart shotgun, the Zhuo has eight barrels, allowing it to track eight targets independently. Don't mess with this one.
 						</Text>
-						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
+						<Text margin="0 0 2.5em 0" font="--paragraph" color="--textGray">
 							<Strong
+								color="--secondary"
 								overflow-wrap="normal"
 								word-break="normal"
 								white-space="normal"
 								text-indent="0"
 								text-overflow="clip"
 								hyphens="manual"
-								color="--secondary"
 							>
 								Nokot?
 							</Strong>
@@ -447,12 +449,12 @@ Henry Stenhouse
 							</Strong>
 						</Text>
 						<Image
-							width="100%"
 							font="--paragraph"
 							margin="0 0 1.5em 0"
 							src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/17.jpg?v=2020-12-04T11:32:38.509Z"
 							object-fit="contain"
 							display="flex"
+							width="100%"
 						/>
 						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
 							Only a short clip of this weapon pops up, but it appears to be a rifle of some kind.
@@ -463,12 +465,12 @@ Henry Stenhouse
 							</Strong>
 						</Text>
 						<Image
-							width="100%"
-							font="--paragraph"
 							margin="0 0 1.5em 0"
 							src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/18.jpg?v=2020-12-04T11:33:17.642Z"
 							object-fit="contain"
 							display="flex"
+							width="100%"
+							font="--paragraph"
 						/>
 						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
 							Locks on to your targets head, to save you all that trouble of lining up a long shot.
@@ -494,7 +496,7 @@ Henry Stenhouse
 							object-fit="contain"
 							display="flex"
 						/>
-						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
+						<Text margin="0 0 2.5em 0" font="--paragraph" color="--textGray">
 							<Strong color="--secondary">
 								Electric Alpha Baton
 							</Strong>
@@ -517,12 +519,12 @@ Henry Stenhouse
 							</Strong>
 						</Text>
 						<Image
+							object-fit="contain"
+							display="flex"
 							width="100%"
 							font="--paragraph"
 							margin="0 0 1.5em 0"
 							src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/20.jpg?v=2020-12-04T11:35:38.922Z"
-							object-fit="contain"
-							display="flex"
 						/>
 						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
 							Okay maybe this is the more you want. A katana with a nano-filament-heated blade edge. Hot and sharp enough to cut limbs clean off
@@ -543,18 +545,18 @@ Henry Stenhouse
 							<br />
 							Likely the tool of an assassin, the Tanto is a shorter (though still pretty sizable) blade used for killing armored enemies up close.
 						</Text>
-						<Text font="--paragraph" color="--secondary" margin="0 0 1.5em 0">
+						<Text margin="0 0 1.5em 0" font="--paragraph" color="--secondary">
 							<Strong>
 								Cyberware
 							</Strong>
 						</Text>
 						<Image
-							width="100%"
-							font="--paragraph"
-							margin="0 0 1.5em 0"
 							src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/21.jpg?v=2020-12-04T11:37:18.737Z"
 							object-fit="contain"
 							display="flex"
+							width="100%"
+							font="--paragraph"
+							margin="0 0 1.5em 0"
 						/>
 						<Text font="--paragraph" color="--textGray" margin="0 0 1.5em 0">
 							In addition to traditional weapons, you’ll be able to modify your body to include various augmented weapons. Here’s the list of the ones we know so far:
@@ -591,37 +593,37 @@ Henry Stenhouse
 					height="2.5em"
 				>
 					<Text
+						position="relative"
+						top=".15em"
 						quarkly-title="Title"
 						font="--title"
 						color="--secondary"
+						flex="0 0 auto"
 						text-transform="uppercase"
 						letter-spacing="-4%"
 						margin="0em 1em 0em 0em"
-						flex="0 0 auto"
-						position="relative"
-						top=".15em"
 					>
 						more 
 ARTICLES
 					</Text>
 					<Box
-						flex="1 1 auto"
-						height="50px"
 						overflow-x="hidden"
 						overflow-y="hidden"
 						background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) center right no-repeat scroll padding-box"
 						position="relative"
 						quarkly-title="Line"
 						sm-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) 90% center no-repeat scroll padding-box"
+						flex="1 1 auto"
+						height="50px"
 					/>
 				</Box>
 				<Box quarkly-title="Content" margin="2.5em 2.5em 2.5em 0em" sm-margin="0em .58em 0em 0em">
 					<Components.Grid>
 						<Components.Card>
 							<Override slot="Name Text">
-								Guide for beginers
+								Guide for beginners
 							</Override>
-							<Override slot="Content" href="/cyberwiki/guide_beginers" background="--color-textDark url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/citiy.png?v=2020-12-04T21:11:43.037Z) 0% 0% /cover no-repeat scroll padding-box" />
+							<Override slot="Content" href="/cyberwiki/gans_of_night_city" background="--color-textDark url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/citiy.png?v=2020-12-04T21:11:43.037Z) 0% 0% /cover no-repeat scroll padding-box" />
 						</Components.Card>
 						<Components.Card>
 							<Override slot="Name Text">
@@ -630,36 +632,14 @@ ARTICLES
 							<Override slot="Content" href="/cyberwiki/transport" background="--color-textDark url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/cycle.png?v=2020-12-04T21:11:43.037Z) 0% 0% /cover no-repeat scroll padding-box" />
 						</Components.Card>
 						<Components.Card>
+							<Override slot="Content" background="--color-textDark url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/team.png?v=2020-12-04T21:11:43.025Z) 0% 0% /cover no-repeat scroll padding-box" href="/cyberwiki/gans_of_night_city" />
 							<Override slot="Name Text">
-								Weapons
+								Gangs of Night city
 							</Override>
-							<Override slot="Content" href="/cyberwiki/main_story" background="--color-textDark url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/pistols.png?v=2020-12-04T21:11:43.025Z) 0% 0% /cover no-repeat scroll padding-box" />
 						</Components.Card>
 					</Components.Grid>
 				</Box>
 			</Components.Main>
 		</Box>
-		<Link
-			font={"--capture"}
-			font-size={"10px"}
-			position={"fixed"}
-			bottom={"12px"}
-			right={"12px"}
-			z-index={"4"}
-			border-radius={"4px"}
-			padding={"5px 12px 4px"}
-			background-color={"--dark"}
-			opacity={"0.6"}
-			hover-opacity={"1"}
-			color={"--light"}
-			cursor={"pointer"}
-			transition={"--opacityOut"}
-			quarkly-title={"Badge"}
-			text-decoration-line={"initial"}
-			href={"https://quarkly.io/"}
-			target={"_blank"}
-		>
-			Made on Quarkly
-		</Link>
 	</Theme>;
 });

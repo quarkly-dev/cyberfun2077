@@ -1,12 +1,14 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Icon, Text, Box, Span, Image, Strong } from "@quarkly/widgets";
+import { Theme, Icon, Text, Link, Box, Span, Image, Strong } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
+import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override } from "@quarkly/components";
 import * as Components from "components";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 export default (() => {
 	return <Theme theme={theme}>
+		<GlobalQuarklyPageStyles pageUrl={"index/main_story"} />
 		<Helmet>
 			<title>
 				Main story
@@ -36,37 +38,38 @@ export default (() => {
 			</Components.Side>
 			<Components.Main>
 				<Box
+					height="2.5em"
 					quarkly-title="Header"
 					display="flex"
 					align-items="center"
 					margin="0em 0em 1.67em 0em"
-					height="2.5em"
 				>
-					<Link href="/index" display="flex" align-items="center" text-decoration-line="initial">
+					<Link text-decoration-line="initial" href="/index" display="flex" align-items="center">
 						<Icon
+							size="1.5em"
+							margin="0px .33em 0px 0px"
 							category="md"
 							icon={MdKeyboardArrowLeft}
 							color="--secondary"
 							position="relative"
 							top=".15em"
-							size="1.5em"
-							margin="0px .33em 0px 0px"
 						/>
 						<Text
+							margin="0em 1em 0em 0em"
 							quarkly-title="Title"
-							font="--title"
-							color="--secondary"
 							text-transform="uppercase"
 							letter-spacing="-4%"
-							margin="0em 1em 0em 0em"
-							flex="0 0 auto"
 							position="relative"
 							top=".15em"
+							font="--title"
+							color="--secondary"
+							flex="0 0 auto"
 						>
 							back
 						</Text>
 					</Link>
 					<Box
+						sm-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) 90% center no-repeat scroll padding-box"
 						flex="1 1 auto"
 						height="50px"
 						overflow-x="hidden"
@@ -74,17 +77,16 @@ export default (() => {
 						background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) center right no-repeat scroll padding-box"
 						position="relative"
 						quarkly-title="Line"
-						sm-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) 90% center no-repeat scroll padding-box"
 					/>
 				</Box>
 				<Box
-					quarkly-title="Content"
 					margin="2.5em 2.5em 5em 0em"
 					sm-margin="0em .58em 2.5em 0em"
 					display="flex"
 					flex-direction="column"
 					align-items="center"
 					md-margin="2.5em 2.5em 3.75em 0em"
+					quarkly-title="Content"
 				>
 					<Box quarkly-title="Article" max-width="52em" position="relative">
 						<Text font="--header1" color="--secondary" margin="0 0 .5em 0" sm-font="400 2.8em/1 BlenderPro, sans-serif">
@@ -93,25 +95,25 @@ export default (() => {
 						<Box display="flex" justify-content="space-between" align-items="center" margin="0px 0px 1em 0px">
 							<Text font="--header6" color="--textGray" margin="0 0 0 0">
 								<Span
-									overflow-wrap="normal"
 									word-break="normal"
 									white-space="normal"
 									text-indent="0"
 									text-overflow="clip"
 									hyphens="manual"
+									overflow-wrap="normal"
 								>
 									By{" "}
 									<Link
-										href="https://www.techspot.com/community/staff/polycount.403116/"
 										color="--secondary"
 										text-decoration-line="initial"
+										hover-text-decoration-line="underline"
+										href="https://www.techspot.com/community/staff/polycount.403116/"
 										overflow-wrap="normal"
 										word-break="normal"
 										white-space="normal"
 										text-indent="0"
 										text-overflow="clip"
 										hyphens="manual"
-										hover-text-decoration-line="underline"
 									>
 										Cohen Coberly
 									</Link>
@@ -139,11 +141,11 @@ export default (() => {
 							<br />
 							More recently, CD Projekt Red finally gave us the{" "}
 							<Link
-								href="https://www.techspot.com/news/86808-cyberpunk-2077-system-requirements-finally-here.html"
-								text-decoration-line="initial"
 								color="--secondary"
 								hover-text-decoration-line="underline"
 								target="_blank"
+								href="https://www.techspot.com/news/86808-cyberpunk-2077-system-requirements-finally-here.html"
+								text-decoration-line="initial"
 							>
 								PC system requirements
 							</Link>
@@ -159,7 +161,7 @@ export default (() => {
 							<br />
 							51 hours may not seem like much to hardcore gamers, but for a more casual player -- which Cyberpunk 2077 has attracted plenty of, due to its astronomical hype -- it's probably at least 10 hours longer than they can handle before becoming bored or distracted by other games or life itself.
 						</Text>
-						<Components.Video font="--paragraph" margin="0 0 1.5em 0" video="jNC6MEA4rQk" />
+						<Components.Video margin="0 0 1.5em 0" video="jNC6MEA4rQk" font="--paragraph" />
 						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
 							While Mills didn't give us any specific numbers for Cyberpunk 2077, it's probably safe to assume the main story will be below the 50-hour mark; perhaps closer to 40 hours.
 							<br />
@@ -187,27 +189,27 @@ export default (() => {
 					height="2.5em"
 				>
 					<Text
-						quarkly-title="Title"
 						font="--title"
 						color="--secondary"
 						text-transform="uppercase"
 						letter-spacing="-4%"
 						margin="0em 1em 0em 0em"
-						flex="0 0 auto"
-						position="relative"
 						top=".15em"
+						quarkly-title="Title"
+						position="relative"
+						flex="0 0 auto"
 					>
 						more news
 					</Text>
 					<Box
-						flex="1 1 auto"
-						height="50px"
-						overflow-x="hidden"
 						overflow-y="hidden"
 						background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) center right no-repeat scroll padding-box"
 						position="relative"
 						quarkly-title="Line"
 						sm-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) 90% center no-repeat scroll padding-box"
+						flex="1 1 auto"
+						height="50px"
+						overflow-x="hidden"
 					/>
 				</Box>
 				<Box quarkly-title="Content" margin="2.5em 2.5em 2.5em 0em" sm-margin="0em .58em 0em 0em">
@@ -234,27 +236,5 @@ export default (() => {
 				</Box>
 			</Components.Main>
 		</Box>
-		<Link
-			font={"--capture"}
-			font-size={"10px"}
-			position={"fixed"}
-			bottom={"12px"}
-			right={"12px"}
-			z-index={"4"}
-			border-radius={"4px"}
-			padding={"5px 12px 4px"}
-			background-color={"--dark"}
-			opacity={"0.6"}
-			hover-opacity={"1"}
-			color={"--light"}
-			cursor={"pointer"}
-			transition={"--opacityOut"}
-			quarkly-title={"Badge"}
-			text-decoration-line={"initial"}
-			href={"https://quarkly.io/"}
-			target={"_blank"}
-		>
-			Made on Quarkly
-		</Link>
 	</Theme>;
 });

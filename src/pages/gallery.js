@@ -1,11 +1,13 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Box, Text } from "@quarkly/widgets";
+import { Theme, Box, Text } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
+import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
+		<GlobalQuarklyPageStyles pageUrl={"gallery"} />
 		<Helmet>
 			<title>
 				Gallery
@@ -30,36 +32,36 @@ export default (() => {
 			background="--dark"
 		>
 			<Components.Side>
-				<Override slot="link2" color="--primary" pointer-events="none" cursor="default" />
+				<Override slot="link2" pointer-events="none" cursor="default" color="--primary" />
 			</Components.Side>
 			<Components.Main>
 				<Override
 					slot="Wrapper"
 					min-height="100vh"
-					md-font="2vw/1 BlenderPro, sans-serif"
-					lg-font="1.5vw/1 BlenderPro, sans-serif"
 					font="1vw/1 BlenderPro, sans-serif"
-					max-height="100vh"
-					overflow-x="hidden"
-					overflow-y="auto"
+					background="linear-gradient(90deg,#000000 0%,rgba(0,0,0,0) 50%),rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/bg-092e74bc_3.png?v=2020-11-25T13:12:51.485Z) top left/76.46em repeat-y scroll padding-box"
+					md-font="2vw/1 BlenderPro, sans-serif"
 					sm-position="relative"
-					sm-padding=".92em 0em 1.58em 1.32em"
-					sm-font="4.5vw/1 BlenderPro, sans-serif"
+					box-sizing="border-box"
 					width="100%"
 					sm-width="100%"
-					background="linear-gradient(90deg,#000000 0%,rgba(0,0,0,0) 50%),rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/bg-092e74bc_3.png?v=2020-11-25T13:12:51.485Z) top left/76.46em repeat-y scroll padding-box"
-					box-sizing="border-box"
-					padding="2em 0px 2em 1.67em"
 					flex="1 1 auto"
+					lg-font="1.5vw/1 BlenderPro, sans-serif"
+					overflow-x="hidden"
+					overflow-y="auto"
+					sm-font="4.5vw/1 BlenderPro, sans-serif"
+					max-height="100vh"
+					sm-padding=".92em 0em 1.58em 1.32em"
+					padding="2em 0px 2em 1.67em"
 				/>
 				<Box
-					quarkly-title="Shadow"
 					sm-position="fixed"
 					sm-top="6em"
-					sm-left={0}
-					sm-right={0}
 					sm-height="6em"
 					display="none"
+					quarkly-title="Shadow"
+					sm-left={0}
+					sm-right={0}
 					sm-background="rgba(0, 0, 0, 0) linear-gradient(0deg,rgba(0,0,0,0) 0%,--color-textDark 100%) 0% 0% /auto repeat scroll padding-box"
 					sm-display="block"
 				/>
@@ -71,27 +73,27 @@ export default (() => {
 					height="2.5em"
 				>
 					<Text
-						quarkly-title="Title"
-						font="--title"
-						color="--secondary"
-						text-transform="uppercase"
-						letter-spacing="-4%"
-						margin="0em 1em 0em 0em"
-						flex="0 0 auto"
 						position="relative"
 						top=".15em"
+						font="--title"
+						text-transform="uppercase"
+						letter-spacing="-4%"
+						flex="0 0 auto"
+						quarkly-title="Title"
+						color="--secondary"
+						margin="0em 1em 0em 0em"
 					>
 						GaLlery
 					</Text>
 					<Box
-						flex="1 1 auto"
-						height="50px"
-						overflow-x="hidden"
-						overflow-y="hidden"
 						background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) center right no-repeat scroll padding-box"
 						position="relative"
 						quarkly-title="Line"
 						sm-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) 90% center no-repeat scroll padding-box"
+						flex="1 1 auto"
+						height="50px"
+						overflow-x="hidden"
+						overflow-y="hidden"
 					/>
 				</Box>
 				<Box quarkly-title="Content" margin="0em 2.5em 0em 0em" sm-margin="0em .58em 0em 0em" md-margin="0em 1.67vw 0em 0em">
@@ -111,11 +113,11 @@ export default (() => {
 							<Override slot="Date" display="none" />
 						</Components.Card>
 						<Components.Card>
+							<Override slot="Date" display="none" />
 							<Override slot="Name Text">
 								Wallpapers
 							</Override>
 							<Override slot="Content" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/Rectangle%2027.png?v=2020-12-01T10:51:28.408Z) 0% 0% /cover repeat scroll padding-box" href="/gallery/wallpapers" />
-							<Override slot="Date" display="none" />
 						</Components.Card>
 						<Components.Card>
 							<Override slot="Name Text">
@@ -128,27 +130,5 @@ export default (() => {
 				</Box>
 			</Components.Main>
 		</Box>
-		<Link
-			font={"--capture"}
-			font-size={"10px"}
-			position={"fixed"}
-			bottom={"12px"}
-			right={"12px"}
-			z-index={"4"}
-			border-radius={"4px"}
-			padding={"5px 12px 4px"}
-			background-color={"--dark"}
-			opacity={"0.6"}
-			hover-opacity={"1"}
-			color={"--light"}
-			cursor={"pointer"}
-			transition={"--opacityOut"}
-			quarkly-title={"Badge"}
-			text-decoration-line={"initial"}
-			href={"https://quarkly.io/"}
-			target={"_blank"}
-		>
-			Made on Quarkly
-		</Link>
 	</Theme>;
 });

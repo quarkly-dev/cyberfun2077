@@ -1,0 +1,23 @@
+module.exports = [
+	"/index/",
+	"/index/final_preview/",
+	"/index/weapons_and_life/",
+	"/index/preorder_steam/",
+	"/index/main_story/",
+	"/index/multiplayer/",
+	"/cyberwiki/",
+	"/cyberwiki/guide_beginners/",
+	"/cyberwiki/gans_of_night_city/",
+	"/cyberwiki/transport/",
+	"/cyberwiki/weapons/",
+	"/gallery/",
+	"/gallery/concept_arts/",
+	"/gallery/screenshots/",
+	"/gallery/wallpapers/",
+	"/gallery/steelbook_arts/",
+	"/system_req/",
+	"/feedback/",
+	"/404/",
+	"/",
+	"/404.html"
+]

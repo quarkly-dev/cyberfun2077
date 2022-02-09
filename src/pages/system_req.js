@@ -1,11 +1,13 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Box, Image, Em, Strong } from "@quarkly/widgets";
+import { Theme, Text, Box, Image, Link, Em, Strong } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
+import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
+		<GlobalQuarklyPageStyles pageUrl={"system_req"} />
 		<Helmet>
 			<title>
 				System requirments
@@ -23,38 +25,39 @@ export default (() => {
 		</Helmet>
 		<Components.Fonts />
 		<Box
-			quarkly-title="Page"
-			display="flex"
 			font="1vw/1 BlenderPro, sans-serif"
 			sm-flex-direction="column"
 			sm-max-height="100vh"
 			background="--dark"
+			quarkly-title="Page"
+			display="flex"
 		>
 			<Components.Side>
 				<Override slot="link5" color="--primary" pointer-events="none" cursor="default" />
 			</Components.Side>
 			<Components.Main>
 				<Box
-					quarkly-title="Header"
-					display="flex"
 					align-items="center"
 					margin="0em 0em 1.67em 0em"
 					height="2.5em"
+					quarkly-title="Header"
+					display="flex"
 				>
 					<Text
+						flex="0 0 auto"
+						top=".15em"
 						quarkly-title="Title"
+						text-transform="uppercase"
+						margin="0em 1em 0em 0em"
+						position="relative"
 						font="--title"
 						color="--secondary"
-						text-transform="uppercase"
 						letter-spacing="-4%"
-						margin="0em 1em 0em 0em"
-						flex="0 0 auto"
-						position="relative"
-						top=".15em"
 					>
 						System Requirements
 					</Text>
 					<Box
+						sm-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) 90% center no-repeat scroll padding-box"
 						flex="1 1 auto"
 						height="50px"
 						overflow-x="hidden"
@@ -62,7 +65,6 @@ export default (() => {
 						background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) center right no-repeat scroll padding-box"
 						position="relative"
 						quarkly-title="Line"
-						sm-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) 90% center no-repeat scroll padding-box"
 					/>
 				</Box>
 				<Box
@@ -72,63 +74,63 @@ export default (() => {
 					display="flex"
 					justify-content="center"
 				>
-					<Box quarkly-title="Article" max-width="52em" position="relative">
-						<Text font="--header1" color="--secondary" margin="0 0 0.27em 0" sm-font="400 2.8em/1 BlenderPro, sans-serif">
+					<Box max-width="52em" position="relative" quarkly-title="Article">
+						<Text sm-font="400 2.8em/1 BlenderPro, sans-serif" font="--header1" color="--secondary" margin="0 0 0.27em 0">
 							Cyberpunk 2077 gets new, more detailed system requirements
 						</Text>
 						<Text font="--header6" color="--textGray" margin="0 0 2em 0">
-							<Text color="--secondary" display="inline-block" margin="0 0.5em 0 0">
+							<Text margin="0 0.5em 0 0" color="--secondary" display="inline-block">
 								By Tom Marks
 							</Text>
 							Posted: 19 Nov 2020 8:30 pm
 						</Text>
 						<Image
-							width="100%"
-							font="--paragraph"
-							margin="0 0 .5em 0"
 							src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/shotweaponman.png?v=2020-12-09T08:46:41.927Z"
 							object-fit="contain"
 							display="flex"
+							width="100%"
+							font="--paragraph"
+							margin="0 0 .5em 0"
 						/>
-						<Text font="--paragraph" color="--textGray" margin="0 0 2.6em 0">
+						<Text margin="0 0 2.6em 0" font="--paragraph" color="--textGray">
 							<br />
 							<br />
 							In September, CD Projekt announced the basic system requirements for{" "}
 							<Link
+								text-indent="0"
+								hyphens="manual"
+								text-decoration-line="initial"
 								href="https://www.pcgamer.com/cyberpunk-2077-release-date-gameplay-video-character-creation-story/"
 								overflow-wrap="normal"
 								word-break="normal"
 								white-space="normal"
-								text-indent="0"
 								text-overflow="clip"
-								hyphens="manual"
 								color="--secondary"
-								text-decoration-line="initial"
 							>
 								Cyberpunk 2077
 							</Link>
 							{" "}in the form of minimum and recommended specs that broke down, in simple terms, what sort of rig you'll need to play. But today, courtesy of global community lead{" "}
 							<Link
-								href="https://twitter.com/Marcin360/status/1329815926871633922"
 								overflow-wrap="normal"
+								hyphens="manual"
+								color="--secondary"
+								text-decoration-line="initial"
+								href="https://twitter.com/Marcin360/status/1329815926871633922"
 								word-break="normal"
 								white-space="normal"
 								text-indent="0"
 								text-overflow="clip"
-								hyphens="manual"
-								color="--secondary"
-								text-decoration-line="initial"
 							>
 								Marcin Momot
 							</Link>
 							, we've got the{" "}
 							<Em
-								overflow-wrap="normal"
 								word-break="normal"
 								white-space="normal"
 								text-indent="0"
 								text-overflow="clip"
 								hyphens="manual"
+								overflow-wrap="normal"
 							>
 								details
 							</Em>
@@ -140,13 +142,13 @@ export default (() => {
 							<br />
 							<br />
 							<Strong
-								overflow-wrap="normal"
-								word-break="normal"
 								white-space="normal"
 								text-indent="0"
 								text-overflow="clip"
 								hyphens="manual"
 								color="--secondary"
+								overflow-wrap="normal"
+								word-break="normal"
 							>
 								Minimum (1080p, low settings)
 							</Strong>
@@ -166,13 +168,13 @@ export default (() => {
 							<br />
 							<br />
 							<Strong
-								overflow-wrap="normal"
 								word-break="normal"
 								white-space="normal"
 								text-indent="0"
 								text-overflow="clip"
 								hyphens="manual"
 								color="--secondary"
+								overflow-wrap="normal"
 							>
 								<br />
 								<br />
@@ -194,13 +196,13 @@ export default (() => {
 							<br />
 							<br />
 							<Strong
+								text-overflow="clip"
+								hyphens="manual"
+								color="--secondary"
 								overflow-wrap="normal"
 								word-break="normal"
 								white-space="normal"
 								text-indent="0"
-								text-overflow="clip"
-								hyphens="manual"
-								color="--secondary"
 							>
 								<br />
 								High (1440p, ultra settings)
@@ -221,13 +223,13 @@ export default (() => {
 							<br />
 							<br />
 							<Strong
-								overflow-wrap="normal"
 								word-break="normal"
 								white-space="normal"
 								text-indent="0"
 								text-overflow="clip"
 								hyphens="manual"
 								color="--secondary"
+								overflow-wrap="normal"
 							>
 								<br />
 								Ultra (2160p, ultra settings)
@@ -251,13 +253,13 @@ export default (() => {
 							<br />
 							<br />
 							<Strong
+								text-overflow="clip"
+								hyphens="manual"
+								color="--secondary"
 								overflow-wrap="normal"
 								word-break="normal"
 								white-space="normal"
 								text-indent="0"
-								text-overflow="clip"
-								hyphens="manual"
-								color="--secondary"
 							>
 								Ray Tracing Minimum (1080p, RT medium settings)
 							</Strong>
@@ -276,13 +278,13 @@ export default (() => {
 							Storage: 70GB SSD
 							<br />
 							<Strong
+								text-overflow="clip"
+								hyphens="manual"
+								color="--secondary"
 								overflow-wrap="normal"
 								word-break="normal"
 								white-space="normal"
 								text-indent="0"
-								text-overflow="clip"
-								hyphens="manual"
-								color="--secondary"
 							>
 								<br />
 								<br />
@@ -305,13 +307,13 @@ export default (() => {
 							<br />
 							<br />
 							<Strong
+								hyphens="manual"
+								color="--secondary"
 								overflow-wrap="normal"
 								word-break="normal"
 								white-space="normal"
 								text-indent="0"
 								text-overflow="clip"
-								hyphens="manual"
-								color="--secondary"
 							>
 								Ray Tracing Ultra (2160p, RT ultra settings)
 								<br />
@@ -336,27 +338,5 @@ export default (() => {
 				</Box>
 			</Components.Main>
 		</Box>
-		<Link
-			font={"--capture"}
-			font-size={"10px"}
-			position={"fixed"}
-			bottom={"12px"}
-			right={"12px"}
-			z-index={"4"}
-			border-radius={"4px"}
-			padding={"5px 12px 4px"}
-			background-color={"--dark"}
-			opacity={"0.6"}
-			hover-opacity={"1"}
-			color={"--light"}
-			cursor={"pointer"}
-			transition={"--opacityOut"}
-			quarkly-title={"Badge"}
-			text-decoration-line={"initial"}
-			href={"https://quarkly.io/"}
-			target={"_blank"}
-		>
-			Made on Quarkly
-		</Link>
 	</Theme>;
 });

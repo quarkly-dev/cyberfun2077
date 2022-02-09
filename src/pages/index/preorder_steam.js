@@ -1,12 +1,14 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Icon, Text, Box, Image, Em } from "@quarkly/widgets";
+import { Theme, Icon, Text, Link, Box, Image, Em } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
+import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override } from "@quarkly/components";
 import * as Components from "components";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 export default (() => {
 	return <Theme theme={theme}>
+		<GlobalQuarklyPageStyles pageUrl={"index/preorder_steam"} />
 		<Helmet>
 			<title>
 				Pre-order Steam
@@ -43,22 +45,22 @@ export default (() => {
 				>
 					<Link href="/index" display="flex" align-items="center" text-decoration-line="initial">
 						<Icon
+							top=".15em"
+							size="1.5em"
+							margin="0px .33em 0px 0px"
 							category="md"
 							icon={MdKeyboardArrowLeft}
 							color="--secondary"
 							position="relative"
-							top=".15em"
-							size="1.5em"
-							margin="0px .33em 0px 0px"
 						/>
 						<Text
-							quarkly-title="Title"
+							flex="0 0 auto"
 							font="--title"
 							color="--secondary"
-							text-transform="uppercase"
 							letter-spacing="-4%"
 							margin="0em 1em 0em 0em"
-							flex="0 0 auto"
+							quarkly-title="Title"
+							text-transform="uppercase"
 							position="relative"
 							top=".15em"
 						>
@@ -66,26 +68,26 @@ export default (() => {
 						</Text>
 					</Link>
 					<Box
+						quarkly-title="Line"
+						sm-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) 90% center no-repeat scroll padding-box"
 						flex="1 1 auto"
 						height="50px"
 						overflow-x="hidden"
 						overflow-y="hidden"
 						background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) center right no-repeat scroll padding-box"
 						position="relative"
-						quarkly-title="Line"
-						sm-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) 90% center no-repeat scroll padding-box"
 					/>
 				</Box>
 				<Box
-					quarkly-title="Content"
-					margin="2.5em 2.5em 5em 0em"
 					sm-margin="0em .58em 2.5em 0em"
 					display="flex"
 					justify-content="center"
 					md-margin="2.5em 2.5em 3.75em 0em"
+					quarkly-title="Content"
+					margin="2.5em 2.5em 5em 0em"
 				>
-					<Box quarkly-title="Article" max-width="52em" position="relative">
-						<Text font="--header1" color="--secondary" margin="0 0 .5em 0" sm-font="400 2.8em/1 BlenderPro, sans-serif">
+					<Box max-width="52em" position="relative" quarkly-title="Article">
+						<Text color="--secondary" margin="0 0 .5em 0" sm-font="400 2.8em/1 BlenderPro, sans-serif" font="--header1">
 							Cyberpunk 2077 short story is an exclusive reward for buying on Steam
 						</Text>
 						<Box display="flex" justify-content="space-between" align-items="center" margin="0px 0px 1em 0px">
@@ -93,28 +95,28 @@ export default (() => {
 								By{" "}
 								<Link
 									href="https://www.gamesradar.com/author/connor-sheridan/"
-									color="--secondary"
-									text-decoration-line="initial"
 									overflow-wrap="normal"
-									word-break="normal"
 									white-space="normal"
 									text-indent="0"
 									text-overflow="clip"
 									hyphens="manual"
+									color="--secondary"
+									text-decoration-line="initial"
+									word-break="normal"
 									hover-text-decoration-line="underline"
 								>
 									Connor Sheridan
 								</Link>
 								<Link
 									href="https://www.gamesradar.com/author/connor-sheridan/"
-									color="--secondary"
-									text-decoration-line="initial"
 									overflow-wrap="normal"
-									word-break="normal"
 									white-space="normal"
-									text-indent="0"
 									text-overflow="clip"
 									hyphens="manual"
+									color="--secondary"
+									text-decoration-line="initial"
+									word-break="normal"
+									text-indent="0"
 									hover-text-decoration-line="underline"
 								>
 									Connor Sheridan
@@ -122,32 +124,32 @@ export default (() => {
 								{" "}9 days ago
 							</Text>
 							<Link
-								href="https://www.gamesradar.com/cyberpunk-2077-short-story-is-an-exclusive-reward-for-buying-on-steam/"
-								font="--paragraph"
 								color="--secondary"
 								margin="0 0 0 0"
 								text-decoration-line="initial"
 								hover-text-decoration-line="underline"
+								href="https://www.gamesradar.com/cyberpunk-2077-short-story-is-an-exclusive-reward-for-buying-on-steam/"
+								font="--paragraph"
 							>
 								Source
 							</Link>
 						</Box>
 						<Image
-							width="100%"
-							font="--paragraph"
 							margin="0 0 1.5em 0"
 							src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/KqoFtyxsCAZR9iEcLNpRYU-1024-80.png?v=2020-12-09T09:02:05.376Z"
 							object-fit="contain"
 							display="flex"
+							width="100%"
+							font="--paragraph"
 						/>
 						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
 							Buying{" "}
 							<Link
+								target="_blank"
 								href="https://www.gamesradar.com/cyberpunk-2077-release-date-trailer-gameplay/"
 								color="--secondary"
 								text-decoration-line="initial"
 								hover-text-decoration-line="underline"
-								target="_blank"
 							>
 								Cyberpunk 2077
 							</Link>
@@ -161,11 +163,11 @@ export default (() => {
 							{" "}driver, a rough-and-tumble group that has the motto "We get you there, dead or alive" in the tabletop RPG upon which Cyberpunk 2077 is based.
 						</Text>
 						<Components.Twitter
+							font="--paragraph"
+							margin="0 0 1.5em 0"
 							display="flex"
 							width="100%"
 							justify-content="center"
-							font="--paragraph"
-							margin="0 0 1.5em 0"
 						/>
 						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0" sm-margin="0 0 1.5em 0">
 							The title and cover art are carrying some strong '50s film noir vibes. Cyberpunk itself started out as a literary subgenre in the '70s and '80s, so it should be interesting to see how author Tomasz Marchewka fuses them. On top of the bonus short story, CD Projekt Red is teasing "exclusive goodies" for Steam purchasers including avatars, posters, and a wallpaper.
@@ -173,17 +175,17 @@ export default (() => {
 							<br />
 							So now you have a choice to make if you're planning to play on PC. You can either buy on Steam for those goodies, or you can buy on GOG.com and unlock an{" "}
 							<Link
-								href="https://www.gog.com/news/gogcoms_exclusive_digital_goodie_for_cyberpunk_2077_revealed?pp=d965a463ac183af4828302b14522bb3371cec49f"
-								color="--secondary"
-								text-decoration-line="initial"
+								text-indent="0"
+								hyphens="manual"
+								hover-text-decoration-line="underline"
 								overflow-wrap="normal"
 								word-break="normal"
 								white-space="normal"
-								text-indent="0"
 								text-overflow="clip"
-								hyphens="manual"
-								hover-text-decoration-line="underline"
 								target="_blank"
+								href="https://www.gog.com/news/gogcoms_exclusive_digital_goodie_for_cyberpunk_2077_revealed?pp=d965a463ac183af4828302b14522bb3371cec49f"
+								color="--secondary"
+								text-decoration-line="initial"
 							>
 								exclusive 50-page digital comic
 							</Link>
@@ -192,13 +194,13 @@ export default (() => {
 								href="https://www.gamesradar.com/cyberpunk-2077-trauma-team-comic-is-coming-in-september/"
 								color="--secondary"
 								text-decoration-line="initial"
-								overflow-wrap="normal"
 								word-break="normal"
-								white-space="normal"
-								text-indent="0"
 								text-overflow="clip"
 								hyphens="manual"
 								hover-text-decoration-line="underline"
+								overflow-wrap="normal"
+								white-space="normal"
+								text-indent="0"
 								target="_blank"
 							>
 								Dark Horse's Cyberpunk 2077 Trauma Team comic
@@ -210,47 +212,47 @@ export default (() => {
 							<br />
 							<br />
 							<Em
-								overflow-wrap="normal"
-								word-break="normal"
-								white-space="normal"
 								text-indent="0"
 								text-overflow="clip"
 								hyphens="manual"
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
 							>
 								If you're planning to buy on console, find out how the{" "}
 							</Em>
 							<Link
+								text-indent="0"
+								text-overflow="clip"
+								hover-text-decoration-line="underline"
+								target="_blank"
 								href="https://www.gamesradar.com/cyberpunk-ps5-xbox-series-x-upgrade/"
-								color="--secondary"
-								text-decoration-line="initial"
 								overflow-wrap="normal"
 								word-break="normal"
 								white-space="normal"
-								text-indent="0"
-								text-overflow="clip"
+								color="--secondary"
+								text-decoration-line="initial"
 								hyphens="manual"
-								hover-text-decoration-line="underline"
-								target="_blank"
 							>
 								<Em
+									hyphens="manual"
+									color="--secondary"
 									overflow-wrap="normal"
 									word-break="normal"
 									white-space="normal"
 									text-indent="0"
 									text-overflow="clip"
-									hyphens="manual"
-									color="--secondary"
 								>
 									Cyberpunk 2077 PS5 / Xbox Series X upgrade
 								</Em>
 							</Link>
 							<Em
-								overflow-wrap="normal"
-								word-break="normal"
 								white-space="normal"
 								text-indent="0"
 								text-overflow="clip"
 								hyphens="manual"
+								overflow-wrap="normal"
+								word-break="normal"
 							>
 								{" "}works.
 							</Em>
@@ -265,19 +267,20 @@ export default (() => {
 					height="2.5em"
 				>
 					<Text
-						quarkly-title="Title"
-						font="--title"
-						color="--secondary"
 						text-transform="uppercase"
 						letter-spacing="-4%"
-						margin="0em 1em 0em 0em"
 						flex="0 0 auto"
 						position="relative"
 						top=".15em"
+						quarkly-title="Title"
+						font="--title"
+						color="--secondary"
+						margin="0em 1em 0em 0em"
 					>
 						more news
 					</Text>
 					<Box
+						sm-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) 90% center no-repeat scroll padding-box"
 						flex="1 1 auto"
 						height="50px"
 						overflow-x="hidden"
@@ -285,16 +288,15 @@ export default (() => {
 						background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) center right no-repeat scroll padding-box"
 						position="relative"
 						quarkly-title="Line"
-						sm-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) 90% center no-repeat scroll padding-box"
 					/>
 				</Box>
 				<Box quarkly-title="Content" margin="2.5em 2.5em 2.5em 0em" sm-margin="0em .58em 0em 0em">
 					<Components.Grid>
 						<Components.Card>
+							<Override slot="Content" href="/index/final_preview" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/news-finalprev.png?v=2020-12-05T08:19:05.521Z) 0% 0% /cover no-repeat scroll padding-box" />
 							<Override slot="Name Text">
 								Final Preview
 							</Override>
-							<Override slot="Content" href="/index/final_preview" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/news-finalprev.png?v=2020-12-05T08:19:05.521Z) 0% 0% /cover no-repeat scroll padding-box" />
 						</Components.Card>
 						<Components.Card>
 							<Override slot="Name Text">
@@ -306,33 +308,11 @@ export default (() => {
 							<Override slot="Name Text">
 								Cyberpunk 2077's main story
 							</Override>
-							<Override slot="Content" href="/index/main_story" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/news-mainstory.png?v=2020-12-05T08:19:16.763Z) 0% 0% /cover no-repeat scroll padding-box" />
+							<Override slot="Content" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/news-mainstory.png?v=2020-12-05T08:19:16.763Z) 0% 0% /cover no-repeat scroll padding-box" href="/index/main_story" />
 						</Components.Card>
 					</Components.Grid>
 				</Box>
 			</Components.Main>
 		</Box>
-		<Link
-			font={"--capture"}
-			font-size={"10px"}
-			position={"fixed"}
-			bottom={"12px"}
-			right={"12px"}
-			z-index={"4"}
-			border-radius={"4px"}
-			padding={"5px 12px 4px"}
-			background-color={"--dark"}
-			opacity={"0.6"}
-			hover-opacity={"1"}
-			color={"--light"}
-			cursor={"pointer"}
-			transition={"--opacityOut"}
-			quarkly-title={"Badge"}
-			text-decoration-line={"initial"}
-			href={"https://quarkly.io/"}
-			target={"_blank"}
-		>
-			Made on Quarkly
-		</Link>
 	</Theme>;
 });

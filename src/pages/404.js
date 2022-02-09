@@ -1,11 +1,13 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Box, Text } from "@quarkly/widgets";
+import { Theme, Box, Text } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
+import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
+		<GlobalQuarklyPageStyles pageUrl={"404"} />
 		<Helmet>
 			<title>
 				404
@@ -36,15 +38,15 @@ export default (() => {
 				</Override>
 			</Components.Side>
 			<Components.Main background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/bg-404.png?v=2020-12-07T09:19:01.711Z) 0% 0% /100% 100% no-repeat scroll padding-box">
-				<Override slot="Wrapper" display="flex" align-items="center" justify-content="center" />
+				<Override slot="Wrapper" justify-content="center" display="flex" align-items="center" />
 				<Box
 					quarkly-title="Shadow"
-					sm-position="fixed"
 					sm-top="6em"
 					sm-left={0}
-					sm-right={0}
 					sm-height="6em"
 					display="none"
+					sm-position="fixed"
+					sm-right={0}
 					sm-background="rgba(0, 0, 0, 0) linear-gradient(0deg,rgba(0,0,0,0) 0%,--color-textDark 100%) 0% 0% /auto repeat scroll padding-box"
 					sm-display="block"
 				/>
@@ -55,38 +57,16 @@ export default (() => {
 					md-margin="0em 1.67vw 0em 0em"
 					text-align="center"
 				>
-					<Text color="--secondary" font="500 5.125em/1 BlenderPro, sans-serif" margin="16px 0px 0.58em 0px">
+					<Text font="500 5.125em/1 BlenderPro, sans-serif" margin="16px 0px 0.58em 0px" color="--secondary">
 						Error_404
 					</Text>
 					<Components.ButtonOrder>
-						<Override slot="ButtonOrder Link" color="--textDark" background="--color-secondary2" href="/index">
+						<Override slot="ButtonOrder Link" href="/index" color="--textDark" background="--color-secondary2">
 							back to home page
 						</Override>
 					</Components.ButtonOrder>
 				</Box>
 			</Components.Main>
 		</Box>
-		<Link
-			font={"--capture"}
-			font-size={"10px"}
-			position={"fixed"}
-			bottom={"12px"}
-			right={"12px"}
-			z-index={"4"}
-			border-radius={"4px"}
-			padding={"5px 12px 4px"}
-			background-color={"--dark"}
-			opacity={"0.6"}
-			hover-opacity={"1"}
-			color={"--light"}
-			cursor={"pointer"}
-			transition={"--opacityOut"}
-			quarkly-title={"Badge"}
-			text-decoration-line={"initial"}
-			href={"https://quarkly.io/"}
-			target={"_blank"}
-		>
-			Made on Quarkly
-		</Link>
 	</Theme>;
 });

@@ -58,14 +58,14 @@ export default {
 		"serifTimes": "Cambria, 'Hoefler Text', Utopia, 'Liberation Serif', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif",
 		"serifGeorgia": "Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif",
 		"serifGaramond": "'Palatino Linotype', Palatino, Palladio, 'URW Palladio L', 'Book Antiqua', Baskerville, 'Bookman Old Style', 'Bitstream Charter', 'Nimbus Roman No9 L', Garamond, 'Apple Garamond', 'ITC Garamond Narrow', 'New Century Schoolbook', 'Century Schoolbook', 'Century Schoolbook L', Georgia, serif",
-		"googleBarlow": "Barlow, sans-serif",
-		"googleBaiJamjuree": "Bai Jamjuree, sans-serif",
-		"googleCoda": "Coda, cursive",
-		"googleCodaCaption": "Coda Caption, sans-serif",
-		"googleAldrich": "Aldrich, sans-serif",
-		"googleEpilogue": "Epilogue, sans-serif",
-		"googleJetBrainsMono": "JetBrains Mono, monospace",
-		"googleChakraPetch": "Chakra Petch, sans-serif"
+		"googleBarlow": "\"Barlow\", sans-serif",
+		"googleBaiJamjuree": "\"Bai Jamjuree\", sans-serif",
+		"googleCoda": "\"Coda\", cursive",
+		"googleCodaCaption": "\"Coda Caption\", sans-serif",
+		"googleAldrich": "\"Aldrich\", sans-serif",
+		"googleEpilogue": "\"Epilogue\", sans-serif",
+		"googleJetBrainsMono": "\"JetBrains Mono\", monospace",
+		"googleChakraPetch": "\"Chakra Petch\", sans-serif"
 	},
 	"font": {
 		"headline1": "normal 900 72px/1.2 --fontFamily-sans",
@@ -73,16 +73,16 @@ export default {
 		"headline3": "normal 500 28px/1.2 --fontFamily-sans",
 		"base": "normal 300 16px/1.5 --fontFamily-sans",
 		"lead": "normal 300 20px/1.5 --fontFamily-sans",
-		"menu": "500 4.16em/.95 BlenderPro, sans-serif",
-		"link": "500 1.62em/1.5 BlenderPro, sans-serif",
-		"button": "500 1.45em/1 BlenderPro, sans-serif",
-		"tooltip": "500 .78em/1 BlenderPro, sans-serif",
-		"title": "500 1.45em/1 BlenderPro, sans-serif",
-		"date": "500 .9375em/1 BlenderPro, sans-serif",
 		"header1": "400 3.125em/1 BlenderPro, sans-serif",
 		"header4": "500 1.66em/.85 BlenderPro, sans-serif",
 		"header6": "500 0.9375em/1.3 BlenderPro, sans-serif",
-		"paragraph": "500 1.2em/1.3 BlenderPro, sans-serif"
+		"menu": "500 4.16em/.95 BlenderPro, sans-serif",
+		"tooltip": "500 .78em/1 BlenderPro, sans-serif",
+		"title": "500 1.45em/1 BlenderPro, sans-serif",
+		"date": "500 .9375em/1 BlenderPro, sans-serif",
+		"paragraph": "500 1.2em/1.3 BlenderPro, sans-serif",
+		"link": "500 1.62em/1.5 BlenderPro, sans-serif",
+		"button": "500 1.45em/1 BlenderPro, sans-serif"
 	},
 	"boxShadow": {
 		"m": "0 4px 5px -1px rgba(0, 0, 0, 0.1)",
@@ -188,7 +188,6 @@ export default {
 			"family": "Barlow",
 			"type": "google-fonts",
 			"meta": {
-				"category": "sans-serif",
 				"variants": [
 					"100",
 					"100italic",
@@ -208,7 +207,8 @@ export default {
 					"800italic",
 					"900",
 					"900italic"
-				]
+				],
+				"category": "sans-serif"
 			}
 		},
 		"Bai Jamjuree": {
@@ -316,7 +316,6 @@ export default {
 			}
 		},
 		"Chakra Petch": {
-			"family": "Chakra Petch",
 			"type": "google-fonts",
 			"meta": {
 				"category": "sans-serif",
@@ -332,7 +331,8 @@ export default {
 					"700",
 					"700italic"
 				]
-			}
+			},
+			"family": "Chakra Petch"
 		}
 	},
 	"version": 186

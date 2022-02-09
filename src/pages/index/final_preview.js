@@ -1,12 +1,14 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Icon, Text, Box, Span, Em, Image } from "@quarkly/widgets";
+import { Theme, Icon, Text, Link, Box, Span, Em, Image } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
+import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override } from "@quarkly/components";
 import * as Components from "components";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 export default (() => {
 	return <Theme theme={theme}>
+		<GlobalQuarklyPageStyles pageUrl={"index/final_preview"} />
 		<Helmet>
 			<title>
 				Final Preview
@@ -24,33 +26,33 @@ export default (() => {
 		</Helmet>
 		<Components.Fonts />
 		<Box
-			quarkly-title="Page"
 			display="flex"
 			font="1vw/1 BlenderPro, sans-serif"
 			sm-flex-direction="column"
 			sm-max-height="100vh"
 			background="--dark"
+			quarkly-title="Page"
 		>
 			<Components.Side>
-				<Override slot="link" color="--primary" pointer-events="none" cursor="default" />
+				<Override slot="link" cursor="default" color="--primary" pointer-events="none" />
 			</Components.Side>
 			<Components.Main>
 				<Box
+					margin="0em 0em 1.67em 0em"
+					height="2.5em"
 					quarkly-title="Header"
 					display="flex"
 					align-items="center"
-					margin="0em 0em 1.67em 0em"
-					height="2.5em"
 				>
-					<Link href="/index" display="flex" align-items="center" text-decoration-line="initial">
+					<Link align-items="center" text-decoration-line="initial" href="/index" display="flex">
 						<Icon
+							top=".15em"
+							size="1.5em"
+							margin="0px .33em 0px 0px"
 							category="md"
 							icon={MdKeyboardArrowLeft}
 							color="--secondary"
 							position="relative"
-							top=".15em"
-							size="1.5em"
-							margin="0px .33em 0px 0px"
 						/>
 						<Text
 							quarkly-title="Title"
@@ -59,48 +61,48 @@ export default (() => {
 							text-transform="uppercase"
 							letter-spacing="-4%"
 							margin="0em 1em 0em 0em"
-							flex="0 0 auto"
 							position="relative"
+							flex="0 0 auto"
 							top=".15em"
 						>
 							back
 						</Text>
 					</Link>
 					<Box
-						flex="1 1 auto"
-						height="50px"
-						overflow-x="hidden"
-						overflow-y="hidden"
 						background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) center right no-repeat scroll padding-box"
 						position="relative"
 						quarkly-title="Line"
 						sm-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) 90% center no-repeat scroll padding-box"
+						flex="1 1 auto"
+						height="50px"
+						overflow-x="hidden"
+						overflow-y="hidden"
 					/>
 				</Box>
 				<Box
+					sm-margin="2.5em .58em 2.5em 0em"
 					quarkly-title="Content"
 					margin="2.5em 2.5em 5em 0em"
 					display="flex"
 					justify-content="center"
 					md-margin="2.5em 2.5em 3.75em 0em"
-					sm-margin="2.5em .58em 2.5em 0em"
 				>
 					<Box quarkly-title="Article" max-width="52em" position="relative">
-						<Text font="--header1" color="--secondary" margin="0 0 .5em 0" sm-font="400 2.8em/1 BlenderPro, sans-serif">
+						<Text sm-font="400 2.8em/1 BlenderPro, sans-serif" font="--header1" color="--secondary" margin="0 0 .5em 0">
 							Cyberpunk 2077: The Final Preview
 						</Text>
-						<Box display="flex" justify-content="space-between" margin="0px 0px 1em 0px" align-items="center">
+						<Box margin="0px 0px 1em 0px" align-items="center" display="flex" justify-content="space-between">
 							<Text font="--header6" color="--textGray" margin="0 0 0 0">
 								<Text display="inline-block" margin="0 0.5em 0 0">
 									By{" "}
 									<Span
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
 										color="--secondary"
 										overflow-wrap="normal"
 										word-break="normal"
 										white-space="normal"
-										text-indent="0"
-										text-overflow="clip"
-										hyphens="manual"
 									>
 										Tom Marks
 									</Span>
@@ -119,18 +121,18 @@ export default (() => {
 							</Link>
 						</Box>
 						<Components.Video margin="0px 0px 1.5em 0px" />
-						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
+						<Text color="--textGray" margin="0 0 2.5em 0" font="--paragraph">
 							It took me roughly six hours of playing to reach{" "}
 							<Link
 								href="https://www.ign.com/games/cyberpunk-2077"
 								overflow-wrap="normal"
 								word-break="normal"
-								white-space="normal"
 								text-indent="0"
-								text-overflow="clip"
 								hyphens="manual"
-								color="--secondary"
 								text-decoration-line="initial"
+								white-space="normal"
+								text-overflow="clip"
+								color="--secondary"
 								hover-text-decoration-line="underline"
 								target="_blank"
 							>
@@ -138,28 +140,28 @@ export default (() => {
 							</Link>
 							{" "}opening title card. That was six hours of the 16 I got to play earlier this week, and even after countless adrenaline-filled shootouts, compelling conversations, and weirdly abundant dildos, I feel like I only just started to scratch below the surface of what’s here. Night City is dense and stunning, and this mammoth RPG is packed with a multitude of mechanics to explore and a copious amount of choice in doing so. As with any game this ambitious and broad, some parts do shine brighter than others (and the frequent bugs in this still-in-development build made me glad it didn’t launch today as{" "}
 							<Link
+								color="--secondary"
+								text-decoration-line="initial"
 								href="https://www.ign.com/articles/cyberpunk-2077-delayed-until-december"
 								overflow-wrap="normal"
 								word-break="normal"
 								white-space="normal"
-								text-indent="0"
 								text-overflow="clip"
 								hyphens="manual"
-								color="--secondary"
-								text-decoration-line="initial"
-								hover-text-decoration-line="underline"
 								target="_blank"
+								text-indent="0"
+								hover-text-decoration-line="underline"
 							>
 								previously planned
 							</Link>
 							) – but once Cyberpunk 2077 kicked off in earnest, it{" "}
 							<Em
+								hyphens="manual"
 								overflow-wrap="normal"
 								word-break="normal"
 								white-space="normal"
 								text-indent="0"
 								text-overflow="clip"
-								hyphens="manual"
 							>
 								clicked
 							</Em>
@@ -168,45 +170,45 @@ export default (() => {
 							<br />
 							Ahead of its launch on December 10, developer CD Projekt Red let me go hands-on for a full 16 hours spread across two days – I started from the very beginning, picking from{" "}
 							<Link
-								href="https://www.ign.com/wikis/cyberpunk-2077/Life_Path_Guide_and_Differences"
-								overflow-wrap="normal"
 								word-break="normal"
 								white-space="normal"
 								text-indent="0"
 								text-overflow="clip"
+								hover-text-decoration-line="underline"
+								href="https://www.ign.com/wikis/cyberpunk-2077/Life_Path_Guide_and_Differences"
+								overflow-wrap="normal"
+								text-decoration-line="initial"
+								target="_blank"
 								hyphens="manual"
 								color="--secondary"
-								text-decoration-line="initial"
-								hover-text-decoration-line="underline"
-								target="_blank"
 							>
 								its three lifepaths
 							</Link>
 							{" "}(I went Corpo, which IGN’s Ryan McCaffrey talked about in a bit more detail in{" "}
 							<Link
-								href="https://www.ign.com/articles/cyberpunk-2077-hands-on-preview-what-we-think-after-4-hours-in-night-city"
-								overflow-wrap="normal"
-								word-break="normal"
-								white-space="normal"
 								text-indent="0"
 								text-overflow="clip"
 								hyphens="manual"
 								color="--secondary"
 								text-decoration-line="initial"
-								hover-text-decoration-line="underline"
 								target="_blank"
+								href="https://www.ign.com/articles/cyberpunk-2077-hands-on-preview-what-we-think-after-4-hours-in-night-city"
+								word-break="normal"
+								white-space="normal"
+								hover-text-decoration-line="underline"
+								overflow-wrap="normal"
 							>
 								his preview
 							</Link>
 							{" "}back in June) and making my own character, with no restrictions on what I could do beyond the time it would take to do it. At first I thought 16 hours was an almost excessive amount of time for a preview (not that I was complaining), but Cyberpunk 2077 is a surprisingly slow burn with an immense amount of options and depth. I only truly got a grasp of its pace and structure by the end of that first day, and spent the second settling into what 2020’s most anticipated game actually felt like to play.
 						</Text>
 						<Image
-							width="100%"
-							font="--paragraph"
-							margin="0 0 .5em 0"
 							src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/pank.jpg?v=2020-12-04T15:06:47.736Z"
 							object-fit="contain"
 							display="flex"
+							width="100%"
+							font="--paragraph"
+							margin="0 0 .5em 0"
 						/>
 						<Box
 							display="grid"
@@ -216,9 +218,9 @@ export default (() => {
 							font="--paragraph"
 						>
 							<Components.ImageZoom>
-								<Override slot="Preview Icon" font="500 .75em/29.952px BlenderPro, sans-serif" />
 								<Override slot="Preview Image" src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2-girlt.png?v=2020-12-07T15:36:34.256Z" srcSet="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2@2x-girlt.png?v=2020-12-07T15:36:41.806Z 2x" />
 								<Override slot="LightBox Image" src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2-girlmax.png?v=2020-12-07T15:42:22.510Z" srcSet="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2@2x-girlmax.png?v=2020-12-07T15:42:34.558Z 2x" />
+								<Override slot="Preview Icon" font="500 .75em/29.952px BlenderPro, sans-serif" />
 							</Components.ImageZoom>
 							<Components.ImageZoom>
 								<Override slot="Preview Icon" font="500 .75em/29.952px BlenderPro, sans-serif" />
@@ -236,7 +238,7 @@ export default (() => {
 								<Override slot="LightBox Image" src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/pinklightbox.png?v=2020-12-08T15:58:38.359Z" srcSet="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/5@2x-min%20pinklightbox.png?v=2020-12-08T15:58:56.089Z 1x" />
 							</Components.ImageZoom>
 						</Box>
-						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
+						<Text color="--textGray" margin="0 0 2.5em 0" font="--paragraph">
 							To assuage any spoiler concerns, I am going to avoid specific story reveals or points here, but I will be referencing the path of the overall plot. The prologue that makes up those first hours is essentially a microcosm of the game itself, introducing you to both your character, named V, and the futuristic yet familiar world around them. It teaches you how to explore, how to fight, how to sneak, and how there are plenty of different ways to approach a given situation – but while it’s all enjoyable enough, it wasn’t until the end of that prologue (and a phenomenal spoilery sequence right after) that Cyberpunk 2077 really sank its hooks into me. It’s a slow walk to get there, but all that setup makes the scenario you are eventually thrust into that much more riveting, and after that it didn’t take long at all to get me fully invested in its larger story.
 							<br />
 							<br />
@@ -270,15 +272,15 @@ export default (() => {
 							<Link
 								href="https://www.ign.com/wikis/cyberpunk-2077/Weapons"
 								overflow-wrap="normal"
+								text-overflow="clip"
+								color="--secondary"
+								target="_blank"
 								word-break="normal"
 								white-space="normal"
 								text-indent="0"
-								text-overflow="clip"
 								hyphens="manual"
-								color="--secondary"
 								text-decoration-line="initial"
 								hover-text-decoration-line="underline"
-								target="_blank"
 							>
 								fancy weapons
 							</Link>
@@ -291,11 +293,11 @@ export default (() => {
 							</Em>
 							{" "}at a time without ever drawing a weapon, completing missions just by having conversations and sneaking around a bit. Fights can be found around almost any corner, with bounties to collect or{" "}
 							<Link
+								hover-text-decoration-line="underline"
+								target="_blank"
 								href="https://www.ign.com/wikis/cyberpunk-2077/Gangs"
 								color="--secondary"
 								text-decoration-line="initial"
-								hover-text-decoration-line="underline"
-								target="_blank"
 							>
 								gangs
 							</Link>
@@ -322,23 +324,23 @@ export default (() => {
 						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
 							Therein lies the strength of Cyberpunk 2077’s combat, I think. It didn’t necessarily amaze me in the heat of any given fight, but the vibe, style, and sheer volume of choices available let me eventually find something that had me grinning ear to ear. Pistols vs rifles vs shotguns, melee vs ranged, stealth vs brute force: all of these decisions are personal, and there are a dozen systems to let you customize and support whichever tactic is most appealing to you – be that through stat-based improvements or cybernetic augmentations. At one point I cleared out an entire four-floor base without ever firing a shot, while other times my character’s high{" "}
 							<Link
-								href="https://www.ign.com/wikis/cyberpunk-2077/Attributes_and_Character_Perks_(Skill_Tree)"
+								text-indent="0"
+								hover-text-decoration-line="underline"
 								color="--secondary"
 								text-decoration-line="initial"
-								overflow-wrap="normal"
 								word-break="normal"
 								white-space="normal"
-								text-indent="0"
+								target="_blank"
+								href="https://www.ign.com/wikis/cyberpunk-2077/Attributes_and_Character_Perks_(Skill_Tree)"
+								overflow-wrap="normal"
 								text-overflow="clip"
 								hyphens="manual"
-								hover-text-decoration-line="underline"
-								target="_blank"
 							>
 								Body stat
 							</Link>
 							{" "}would let me rip open certain doors and rush in head first. And if you're more interested in roleplaying like this is the tabletop RPG it’s based off of, the roads are literally clear for you to lean into that path as well.
 						</Text>
-						<Components.Video margin="0px 0px 1.5em 0px" video="hkJFAkBgFHU" />
+						<Components.Video video="hkJFAkBgFHU" margin="0px 0px 1.5em 0px" />
 						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0" sm-margin="0 0 1.5em 0">
 							One last thing that should be noted is that seeing this game in action for myself makes me glad CDPR opted for another delay (as much as it sucks that this peek only whet my appetite for more). I played through a streaming service with the host system running it on a PC with an RTX 3080 GPU, and while it ran buttery smooth performance-wise, there were a{" "}
 							<Em>
@@ -356,43 +358,43 @@ export default (() => {
 					</Box>
 				</Box>
 				<Box
-					quarkly-title="Header"
-					display="flex"
 					align-items="center"
 					margin="0em 0em 1.67em 0em"
 					height="2.5em"
+					quarkly-title="Header"
+					display="flex"
 				>
 					<Text
+						margin="0em 1em 0em 0em"
+						flex="0 0 auto"
+						position="relative"
 						quarkly-title="Title"
 						font="--title"
 						color="--secondary"
 						text-transform="uppercase"
 						letter-spacing="-4%"
-						margin="0em 1em 0em 0em"
-						flex="0 0 auto"
-						position="relative"
 						top=".15em"
 					>
 						more news
 					</Text>
 					<Box
-						flex="1 1 auto"
-						height="50px"
-						overflow-x="hidden"
 						overflow-y="hidden"
 						background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) center right no-repeat scroll padding-box"
 						position="relative"
 						quarkly-title="Line"
 						sm-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) 90% center no-repeat scroll padding-box"
+						flex="1 1 auto"
+						height="50px"
+						overflow-x="hidden"
 					/>
 				</Box>
 				<Box quarkly-title="Content" margin="2.5em 2.5em 2.5em 0em" sm-margin="0em .58em 0em 0em">
 					<Components.Grid>
 						<Components.Card>
+							<Override slot="Content" href="/index/weapons_and_life" background="--color-textDark url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/news-weapons.png?v=2020-12-05T08:19:16.733Z) 0% 0% /cover no-repeat scroll padding-box" />
 							<Override slot="Name Text">
 								Weapons and Life
 							</Override>
-							<Override slot="Content" href="/index/weapons_and_life" background="--color-textDark url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/news-weapons.png?v=2020-12-05T08:19:16.733Z) 0% 0% /cover no-repeat scroll padding-box" />
 						</Components.Card>
 						<Components.Card>
 							<Override slot="Name Text">
@@ -410,27 +412,5 @@ export default (() => {
 				</Box>
 			</Components.Main>
 		</Box>
-		<Link
-			font={"--capture"}
-			font-size={"10px"}
-			position={"fixed"}
-			bottom={"12px"}
-			right={"12px"}
-			z-index={"4"}
-			border-radius={"4px"}
-			padding={"5px 12px 4px"}
-			background-color={"--dark"}
-			opacity={"0.6"}
-			hover-opacity={"1"}
-			color={"--light"}
-			cursor={"pointer"}
-			transition={"--opacityOut"}
-			quarkly-title={"Badge"}
-			text-decoration-line={"initial"}
-			href={"https://quarkly.io/"}
-			target={"_blank"}
-		>
-			Made on Quarkly
-		</Link>
 	</Theme>;
 });

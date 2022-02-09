@@ -29,13 +29,17 @@ const Video = ({
 	};
 
 	const onFrameReady = e => {
-		setReady(true);
-		e.target.f.style = `
-      top: 0;
-      left: 0;
-      height: 100%;
-      position: absolute;
-    `;
+		setTimeout(() => {
+			const key = Object.keys(e.target).find(key => e.target[key] instanceof HTMLElement);
+			if (e.target[key] === 'undefined') return;
+			setReady(true);
+			e.target[key].style = `
+        top: 0;
+        left: 0;
+        height: 100%;
+        position: absolute;
+      `;
+		}, 100);
 	};
 
 	return <Box

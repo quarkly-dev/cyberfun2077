@@ -1,12 +1,14 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Icon, Text, Box, Span, Strong, Image } from "@quarkly/widgets";
+import { Theme, Icon, Text, Link, Box, Span, Strong, Image } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
+import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override } from "@quarkly/components";
 import * as Components from "components";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 export default (() => {
 	return <Theme theme={theme}>
+		<GlobalQuarklyPageStyles pageUrl={"index/weapons_and_life"} />
 		<Helmet>
 			<title>
 				Weapons and life
@@ -44,15 +46,16 @@ export default (() => {
 				>
 					<Link href="/index" display="flex" align-items="center" text-decoration-line="initial">
 						<Icon
+							margin="0px .33em 0px 0px"
 							category="md"
 							icon={MdKeyboardArrowLeft}
 							color="--secondary"
 							position="relative"
 							top=".15em"
 							size="1.5em"
-							margin="0px .33em 0px 0px"
 						/>
 						<Text
+							position="relative"
 							quarkly-title="Title"
 							font="--title"
 							color="--secondary"
@@ -60,57 +63,56 @@ export default (() => {
 							letter-spacing="-4%"
 							margin="0em 1em 0em 0em"
 							flex="0 0 auto"
-							position="relative"
 							top=".15em"
 						>
 							back
 						</Text>
 					</Link>
 					<Box
+						quarkly-title="Line"
+						sm-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) 90% center no-repeat scroll padding-box"
 						flex="1 1 auto"
 						height="50px"
 						overflow-x="hidden"
 						overflow-y="hidden"
 						background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) center right no-repeat scroll padding-box"
 						position="relative"
-						quarkly-title="Line"
-						sm-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) 90% center no-repeat scroll padding-box"
 					/>
 				</Box>
 				<Box
+					md-margin="2.5em 2.5em 3.75em 0em"
 					quarkly-title="Content"
 					margin="2.5em 2.5em 5em 0em"
 					sm-margin="0em .58em 2.5em 0em"
 					display="flex"
 					justify-content="center"
-					md-margin="2.5em 2.5em 3.75em 0em"
 				>
 					<Box quarkly-title="Article" max-width="52em" position="relative">
-						<Text font="--header1" color="--secondary" margin="0 0 .5em 0" sm-font="400 2.8em/1 BlenderPro, sans-serif">
+						<Text sm-font="400 2.8em/1 BlenderPro, sans-serif" font="--header1" color="--secondary" margin="0 0 .5em 0">
 							CD Projekt Red shows off Cyberpunk 2077's weapons and Lifepath system
 						</Text>
-						<Box display="flex" justify-content="space-between" margin="0px 0px 1em 0px" align-items="center">
+						<Box justify-content="space-between" margin="0px 0px 1em 0px" align-items="center" display="flex">
 							<Text font="--header6" color="--textGray" margin="0 0 0 0">
 								<Span
-									overflow-wrap="normal"
-									word-break="normal"
-									white-space="normal"
 									text-indent="0"
 									text-overflow="clip"
 									hyphens="manual"
+									overflow-wrap="normal"
+									word-break="normal"
+									white-space="normal"
 								>
 									By{" "}
 									<Link
-										href="https://www.techspot.com/community/staff/polycount.403116/"
 										overflow-wrap="normal"
 										word-break="normal"
 										white-space="normal"
-										text-indent="0"
 										text-overflow="clip"
+										hover-text-decoration-line="underline"
+										href="https://www.techspot.com/community/staff/polycount.403116/"
+										text-indent="0"
 										hyphens="manual"
 										text-decoration-line="initial"
 										color="--secondary"
-										hover-text-decoration-line="underline"
 									>
 										Cohen Coberly
 									</Link>
@@ -118,12 +120,12 @@ export default (() => {
 								</Span>
 							</Text>
 							<Link
+								text-decoration-line="initial"
+								hover-text-decoration-line="underline"
 								href="https://www.techspot.com/news/86313-cd-projekt-red-shows-off-cyberpunk-2077-weapons.html"
 								font="--paragraph"
 								color="--secondary"
 								margin="0 0 0 0"
-								text-decoration-line="initial"
-								hover-text-decoration-line="underline"
 							>
 								Source
 							</Link>
@@ -147,17 +149,17 @@ export default (() => {
 							<br />
 							The first{" "}
 							<Link
-								href="https://www.techspot.com/news/85775-watch-cd-projekt-red-reveals-new-trailer-gameplay.html"
-								text-decoration-line="initial"
-								color="--secondary"
+								hover-text-decoration-line="underline"
+								target="_blank"
 								overflow-wrap="normal"
+								text-overflow="clip"
+								color="--secondary"
 								word-break="normal"
 								white-space="normal"
 								text-indent="0"
-								text-overflow="clip"
 								hyphens="manual"
-								hover-text-decoration-line="underline"
-								target="_blank"
+								href="https://www.techspot.com/news/85775-watch-cd-projekt-red-reveals-new-trailer-gameplay.html"
+								text-decoration-line="initial"
 							>
 								NCW episode
 							</Link>
@@ -166,17 +168,17 @@ export default (() => {
 							<br />
 							Today, the{" "}
 							<Link
-								href="https://www.techspot.com/news/86274-cd-projekt-red-details-cyberpunk-2077-lifepath-combat.html"
-								text-decoration-line="initial"
-								color="--secondary"
-								overflow-wrap="normal"
-								word-break="normal"
 								white-space="normal"
+								hyphens="manual"
+								target="_blank"
+								color="--secondary"
+								word-break="normal"
+								overflow-wrap="normal"
 								text-indent="0"
 								text-overflow="clip"
-								hyphens="manual"
 								hover-text-decoration-line="underline"
-								target="_blank"
+								href="https://www.techspot.com/news/86274-cd-projekt-red-details-cyberpunk-2077-lifepath-combat.html"
+								text-decoration-line="initial"
 							>
 								second episode
 							</Link>
@@ -196,12 +198,12 @@ export default (() => {
 							The Corpo lifepath is ideal for those who love intrigue, skullduggery, and ruthlessness. As a Corpo, you'll be able to work with other corporate entities and individuals much easier, and perhaps strike deals that wouldn't be available to players who choose the other two lifepaths.
 						</Text>
 						<Image
+							display="flex"
 							width="100%"
 							font="--paragraph"
 							margin="0 0 1.5em 0"
 							src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2020-08-10-image-11-j.png?v=2020-12-09T09:13:50.553Z"
 							object-fit="contain"
-							display="flex"
 						/>
 						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
 							With Lifepaths out of the way, let's move on to weapons. In the latest episode of NCW, we see shotguns, rifles, snipers, SMGs, pistols, and melee weapons. Notably, the combat seems to have been substantially improved compared to previous gameplay demos. The weapons look more impactful, and the enemy hit reactions have been given some extra "oomph."
@@ -230,14 +232,14 @@ export default (() => {
 							object-fit="contain"
 							display="flex"
 						/>
-						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
+						<Text color="--textGray" margin="0 0 2.5em 0" font="--paragraph">
 							Attachments include things like silencers, expanded magazines, scopes, and stocks, whereas software mods are under-the-hood upgrades that can boost your damage, increase your fire rate, or even change your damage type.
 							<br />
 							<br />
 							We won't focus too much on the Samurai portion of Night City Wire: Episode 2 here, as there just isn't much to discuss. In short, the real-life band "Refused" is handling all the music for Samurai, and it's as loud, hard-hitting, and gritty as you'd expect -- you can listen to the fictional band's latest song below.
 						</Text>
 						<Components.Video margin="0 0 1.5em 0" video="VOXOdflScCY" />
-						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0" sm-margin="0 0 1.5em 0">
+						<Text color="--textGray" margin="0 0 2.5em 0" sm-margin="0 0 1.5em 0" font="--paragraph">
 							All in all, Cyberpunk 2077 is looking better than ever. After two delays and almost five years of development, this sci-fi epic is finally close to becoming a real product, and with a little luck, it might just live up to the hype.
 						</Text>
 					</Box>
@@ -252,13 +254,13 @@ export default (() => {
 					<Text
 						quarkly-title="Title"
 						font="--title"
-						color="--secondary"
 						text-transform="uppercase"
 						letter-spacing="-4%"
-						margin="0em 1em 0em 0em"
-						flex="0 0 auto"
 						position="relative"
 						top=".15em"
+						color="--secondary"
+						margin="0em 1em 0em 0em"
+						flex="0 0 auto"
 					>
 						more news
 					</Text>
@@ -273,7 +275,7 @@ export default (() => {
 						sm-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) 90% center no-repeat scroll padding-box"
 					/>
 				</Box>
-				<Box quarkly-title="Content" margin="2.5em 2.5em 2.5em 0em" sm-margin="0em .58em 0em 0em">
+				<Box sm-margin="0em .58em 0em 0em" quarkly-title="Content" margin="2.5em 2.5em 2.5em 0em">
 					<Components.Grid>
 						<Components.Card>
 							<Override slot="Name Text">
@@ -297,27 +299,5 @@ export default (() => {
 				</Box>
 			</Components.Main>
 		</Box>
-		<Link
-			font={"--capture"}
-			font-size={"10px"}
-			position={"fixed"}
-			bottom={"12px"}
-			right={"12px"}
-			z-index={"4"}
-			border-radius={"4px"}
-			padding={"5px 12px 4px"}
-			background-color={"--dark"}
-			opacity={"0.6"}
-			hover-opacity={"1"}
-			color={"--light"}
-			cursor={"pointer"}
-			transition={"--opacityOut"}
-			quarkly-title={"Badge"}
-			text-decoration-line={"initial"}
-			href={"https://quarkly.io/"}
-			target={"_blank"}
-		>
-			Made on Quarkly
-		</Link>
 	</Theme>;
 });

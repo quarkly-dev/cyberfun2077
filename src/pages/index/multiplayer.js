@@ -1,12 +1,14 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Icon, Text, Box, Span, Image, Strong } from "@quarkly/widgets";
+import { Theme, Icon, Text, Link, Box, Span, Image, Strong } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
+import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override } from "@quarkly/components";
 import * as Components from "components";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 export default (() => {
 	return <Theme theme={theme}>
+		<GlobalQuarklyPageStyles pageUrl={"index/multiplayer"} />
 		<Helmet>
 			<title>
 				Multiplayer
@@ -36,13 +38,13 @@ export default (() => {
 			</Components.Side>
 			<Components.Main>
 				<Box
+					height="2.5em"
 					quarkly-title="Header"
 					display="flex"
 					align-items="center"
 					margin="0em 0em 1.67em 0em"
-					height="2.5em"
 				>
-					<Link href="/index" display="flex" align-items="center" text-decoration-line="initial">
+					<Link align-items="center" text-decoration-line="initial" href="/index" display="flex">
 						<Icon
 							category="md"
 							icon={MdKeyboardArrowLeft}
@@ -53,64 +55,64 @@ export default (() => {
 							margin="0px .33em 0px 0px"
 						/>
 						<Text
+							margin="0em 1em 0em 0em"
+							position="relative"
+							top=".15em"
 							quarkly-title="Title"
-							font="--title"
 							color="--secondary"
 							text-transform="uppercase"
 							letter-spacing="-4%"
-							margin="0em 1em 0em 0em"
 							flex="0 0 auto"
-							position="relative"
-							top=".15em"
+							font="--title"
 						>
 							back
 						</Text>
 					</Link>
 					<Box
-						flex="1 1 auto"
-						height="50px"
-						overflow-x="hidden"
 						overflow-y="hidden"
 						background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) center right no-repeat scroll padding-box"
 						position="relative"
 						quarkly-title="Line"
 						sm-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) 90% center no-repeat scroll padding-box"
+						flex="1 1 auto"
+						height="50px"
+						overflow-x="hidden"
 					/>
 				</Box>
 				<Box
-					quarkly-title="Content"
-					margin="2.5em 2.5em 5em 0em"
 					sm-margin="0em .58em 2.5em 0em"
 					display="flex"
 					justify-content="center"
 					md-margin="2.5em 2.5em 3.75em 0em"
+					quarkly-title="Content"
+					margin="2.5em 2.5em 5em 0em"
 				>
-					<Box quarkly-title="Article" max-width="52em" position="relative">
-						<Text font="--header1" color="--secondary" margin="0 0 .5em 0" sm-font="400 2.8em/1 BlenderPro, sans-serif">
+					<Box position="relative" quarkly-title="Article" max-width="52em">
+						<Text sm-font="400 2.8em/1 BlenderPro, sans-serif" font="--header1" color="--secondary" margin="0 0 .5em 0">
 							Cyberpunk 2077's multiplayer mode won't arrive before 2022
 						</Text>
 						<Box display="flex" align-items="center" justify-content="space-between" margin="0px 0px 1em 0px">
-							<Text font="--header6" color="--textGray" margin="0 0 0 0">
+							<Text color="--textGray" margin="0 0 0 0" font="--header6">
 								<Span
-									overflow-wrap="normal"
-									word-break="normal"
-									white-space="normal"
 									text-indent="0"
 									text-overflow="clip"
 									hyphens="manual"
+									overflow-wrap="normal"
+									word-break="normal"
+									white-space="normal"
 								>
 									By{" "}
 									<Link
-										href="https://www.techspot.com/community/staff/polycount.403116/"
 										overflow-wrap="normal"
 										word-break="normal"
 										white-space="normal"
 										text-indent="0"
-										text-overflow="clip"
+										text-decoration-line="initial"
+										href="https://www.techspot.com/community/staff/polycount.403116/"
 										hyphens="manual"
 										color="--secondary"
-										text-decoration-line="initial"
 										hover-text-decoration-line="underline"
+										text-overflow="clip"
 									>
 										Cohen Coberly
 									</Link>
@@ -129,14 +131,14 @@ export default (() => {
 							</Link>
 						</Box>
 						<Image
-							width="100%"
-							font="--paragraph"
-							margin="0 0 1.5em 0"
 							src="https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/2020-01-17-image-20-j.png?v=2020-12-09T09:17:43.873Z"
 							object-fit="contain"
 							display="flex"
+							width="100%"
+							font="--paragraph"
+							margin="0 0 1.5em 0"
 						/>
-						<Text font="--paragraph" color="--textGray" margin="0 0 2.5em 0">
+						<Text color="--textGray" margin="0 0 2.5em 0" font="--paragraph">
 							<Strong color="--secondary">
 								In brief:
 							</Strong>
@@ -145,11 +147,11 @@ export default (() => {
 							<br />
 							In an investor call held yesterday, during which CD Projekt Red discussed{" "}
 							<Link
+								target="_blank"
 								href="https://www.techspot.com/news/83585-cyberpunk-2077-has-delayed.html"
 								text-decoration-line="initial"
 								color="--secondary"
 								hover-text-decoration-line="underline"
-								target="_blank"
 							>
 								Cyberpunk 2077's delay
 							</Link>
@@ -196,27 +198,27 @@ export default (() => {
 					height="2.5em"
 				>
 					<Text
+						letter-spacing="-4%"
+						position="relative"
+						top=".15em"
+						flex="0 0 auto"
 						quarkly-title="Title"
 						font="--title"
 						color="--secondary"
 						text-transform="uppercase"
-						letter-spacing="-4%"
 						margin="0em 1em 0em 0em"
-						flex="0 0 auto"
-						position="relative"
-						top=".15em"
 					>
 						more news
 					</Text>
 					<Box
-						flex="1 1 auto"
-						height="50px"
-						overflow-x="hidden"
 						overflow-y="hidden"
 						background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) center right no-repeat scroll padding-box"
 						position="relative"
 						quarkly-title="Line"
 						sm-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/line_2.svg?v=2020-11-24T13:11:49.285Z) 90% center no-repeat scroll padding-box"
+						flex="1 1 auto"
+						height="50px"
+						overflow-x="hidden"
 					/>
 				</Box>
 				<Box quarkly-title="Content" margin="2.5em 2.5em 2.5em 0em" sm-margin="0em .58em 0em 0em">
@@ -237,33 +239,11 @@ export default (() => {
 							<Override slot="Name Text">
 								Cyberpunk 2077's main story
 							</Override>
-							<Override slot="Content" href="/index/main_story" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/news-mainstory.png?v=2020-12-05T08:19:16.763Z) 0% 0% /cover no-repeat scroll padding-box" />
+							<Override slot="Content" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbbb8e92c4ef2001e329c56/images/news-mainstory.png?v=2020-12-05T08:19:16.763Z) 0% 0% /cover no-repeat scroll padding-box" href="/index/main_story" />
 						</Components.Card>
 					</Components.Grid>
 				</Box>
 			</Components.Main>
 		</Box>
-		<Link
-			font={"--capture"}
-			font-size={"10px"}
-			position={"fixed"}
-			bottom={"12px"}
-			right={"12px"}
-			z-index={"4"}
-			border-radius={"4px"}
-			padding={"5px 12px 4px"}
-			background-color={"--dark"}
-			opacity={"0.6"}
-			hover-opacity={"1"}
-			color={"--light"}
-			cursor={"pointer"}
-			transition={"--opacityOut"}
-			quarkly-title={"Badge"}
-			text-decoration-line={"initial"}
-			href={"https://quarkly.io/"}
-			target={"_blank"}
-		>
-			Made on Quarkly
-		</Link>
 	</Theme>;
 });
